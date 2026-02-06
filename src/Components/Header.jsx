@@ -25,7 +25,7 @@ export default function Header() {
     
         <img
         onClick={()=>window.location.href="/"}
-        src="/icon.jpg" alt="Quiz Logo" className="h-40 object-contain" />
+        src="/icon.jpg" alt="Quiz Logo" className="h-14 object-contain" />
 
     <div className=' flex gap-3.5'>
         <div
