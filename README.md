@@ -23,7 +23,7 @@
 
 ## 🛠️ Technology Stack
 
--   **Frontend Framework**: [React](https://reactjs.org/) (v19)
+-   **Framework**: [React](https://reactjs.org/) (v19)
 -   **Build Tool**: [Vite](https://vitejs.dev/)
 -   **Styling**: [Tailwind CSS](https://tailwindcss.com/) (v4)
 -   **Routing**: [React Router](https://reactrouter.com/) (v7)
@@ -75,7 +75,8 @@ quizee/
 │   │   ├── Footer.jsx   # Application footer
 │   │   ├── Header.jsx   # Navigation bar and header
 │   │   ├── Home.jsx     # Landing page with flashcards & carousel
-│   │   └── Quiz.jsx     # Quiz interface (in development)
+│   │   ├── Quiz.jsx     # Quiz topic selection
+│   │   └── QuizComponent.jsx # Static quiz logic
 │   ├── App.jsx          # Main application component & routing
 │   ├── App.css          # Global styles
 │   ├── index.css        # Tailwind directives and base styles

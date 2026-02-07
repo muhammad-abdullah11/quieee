@@ -1,98 +1,68 @@
 import React, { useState } from "react";
+import QuizComponent from "./QuizComponent";
 
-const jsQuestions = [
-  {
-    question: "Which of the following is NOT a JavaScript data type?",
-    options: ["String", "Boolean", "Float", "Undefined"],
-    answer: "Float",
-  },
-  {
-    question: "Which keyword declares a variable that cannot be reassigned?",
-    options: ["var", "let", "const", "static"],
-    answer: "const",
-  },
+const topics = [
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "Python",
+  "Java",
+  "C",
+  "PHP",
+  "TypeScript",
 ];
 
 const Quiz = () => {
-  const [currQues, setCurrQues] = useState(0);
-  const [selectedAns, setSelectedAns] = useState("");
-  const [wrongCount, setWrongCount] = useState(0);
-  const [showResult, setShowResult] = useState(false);
-
-  const handleNextBtn = () => {
-    if (!selectedAns) return;
-
-    if (selectedAns !== jsQuestions[currQues].answer) {
-      setWrongCount((prev) => prev + 1);
-    }
-
-    if (currQues === jsQuestions.length - 1) {
-      setShowResult(true);
-      return;
-    }
-
-    setCurrQues((prev) => prev + 1);
-    setSelectedAns("");
-  };
+  const [topic, setTopic] = useState("");
 
   return (
-    <main className=" p-8">
-      
-      <div className="w-full max-w-md bg-gray-200 rounded-2xl shadow-lg p-6">
-        <h2 className="text-2xl font-bold mb-4">QUIZEE</h2>
+    <main className="min-h-screen flex items-center justify-center bg-gray-100 p-4">
+      <div className="max-w-xl w-full bg-white rounded-xl shadow-lg p-6">
+        <h2 className="text-2xl font-semibold mb-4 text-center">
+          Choose a Topic
+        </h2>
 
-        <p className="font-semibold mb-2">
-          Question {currQues + 1} of {jsQuestions.length}
-        </p>
+          <section className="space-y-4">
+            <img
+              src="https://images.unsplash.com/photo-1599508704512-2f19efd1e35f?w=600"
+              alt="quiz"
+              className="rounded-lg h-40 w-full object-cover"
+            />
 
-        <p className="mb-4">{jsQuestions[currQues].question}</p>
-
-        <form className="space-y-3">
-          {jsQuestions[currQues].options.map((opt, i) => (
-            <label
-              key={i}
-              className="flex items-center gap-2 cursor-pointer"
-            >
-              <input
-                type="radio"
-                name="option"
-                value={opt}
-                checked={selectedAns === opt}
-                onChange={() => setSelectedAns(opt)}
-              />
-              <span>{opt}</span>
-            </label>
-          ))}
-        </form>
-
-        <button
-          onClick={handleNextBtn}
-          disabled={!selectedAns}
-          className="mt-6 px-4 bg-blue-600 text-white py-2 rounded-lg disabled:opacity-50"
-        >
-          {currQues === jsQuestions.length - 1 ? "Finish" : "Next"}
-        </button>
-      </div>
-
-      {showResult && (
-        <div className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center">
-          <div className="bg-white p-6 rounded-xl shadow-lg text-center">
-            <h3 className="text-xl font-bold mb-2">Quiz Completed </h3>
-            <p className="mb-4">
-              Wrong Answers:{" "}
-              <span className="font-bold text-red-600">{wrongCount}</span> /{" "}
-              {jsQuestions.length}
-            </p>
+            <div className="grid grid-cols-2 gap-3">
+              {topics.map((t, i) => (
+                <label
+                  key={i}
+                  className={`flex items-center gap-2 p-2 border rounded-lg cursor-pointer transition
+                    ${
+                      topic === t
+                        ? "border-blue-600 bg-blue-50"
+                        : "border-gray-300 hover:bg-gray-100"
+                    }`}
+                >
+                  <input
+                    type="radio"
+                    name="topic"
+                    value={t}
+                    checked={topic === t}
+                    onChange={() => setTopic(t)}
+                    className="accent-blue-600"
+                  />
+                  <span className="font-medium">{t}</span>
+                </label>
+              ))}
+            </div>
 
             <button
-              onClick={() => window.location.reload()}
-              className="bg-blue-600 text-white px-4 py-2 rounded-lg"
+              disabled={!topic}
+              onClick={() => {window.location.href = `/quiz/play?topic=${topic}`}}
+              className="w-full bg-blue-600 text-white py-2 rounded-lg font-semibold disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              Restart Quiz
+              Start Quiz
             </button>
-          </div>
-        </div>
-      )}
+          </section>
+        
+      </div>
     </main>
   );
 };
