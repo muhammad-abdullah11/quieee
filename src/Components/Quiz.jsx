@@ -16,8 +16,8 @@ const Quiz = () => {
   const [topic, setTopic] = useState("");
 
   return (
-    <main className="min-h-screen flex items-center justify-center bg-gray-100 p-4">
-      <div className="max-w-xl w-full bg-white rounded-xl shadow-lg p-6">
+    <main className="py-2 flex bg-gray-100 ">
+      <div className="w-full bg-white rounded-xl shadow-lg p-6">
         <h2 className="text-2xl font-semibold mb-4 text-center">
           Choose a Topic
         </h2>

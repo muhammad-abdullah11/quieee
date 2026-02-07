@@ -161,7 +161,7 @@ const QuizComponent = () => {
   };
 
   return (
-   <main className="min-h-screen w-full bg-gradient-to-br from-slate-100 to-slate-200 p-6 md:p-10 flex justify-center">
+   <main className="w-full bg-gradient-to-br from-slate-100 to-slate-200 md:p-10 flex justify-center py-2">
   <div className="w-full max-w-3xl bg-white rounded-3xl shadow-xl overflow-hidden">
     <div className="p-6 md:p-8">
       <h1 className="text-3xl font-extrabold tracking-tight text-slate-800">
@@ -175,7 +175,7 @@ const QuizComponent = () => {
     <img
       src={topics.img}
       alt={topic}
-      className="w-full h-56 object-cover"
+      className="w-full h-56 object-cover mx-2 rounded-lg"
     />
 
     <div className="p-6 md:p-8">
