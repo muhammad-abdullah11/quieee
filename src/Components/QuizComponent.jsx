@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React, { useState } from 'react'
 import { useSearchParams } from 'react-router-dom';
 
 const quizData = [
@@ -134,20 +134,23 @@ const quizData = [
 
 
 const QuizComponent = () => {
-  
+
   const [searchParams] = useSearchParams();
-  const [topic] = useState(searchParams.get("topic"))  
-  const [topics] = useState(quizData.find((q)=>q.topic==topic))  
-  const [Questions] = useState(quizData.find((q)=>q.topic==topic).mcqs)  
+  const [topic] = useState(searchParams.get("topic"))
+  const [topics] = useState(quizData.find((q) => q.topic == topic))
+  const [Questions] = useState(quizData.find((q) => q.topic == topic).mcqs)
   const [currQues, setCurrQues] = useState(0);
   const [selectedAns, setSelectedAns] = useState("");
   const [wrongCount, setWrongCount] = useState(0);
+  const [wrongQuestions, setWrongQuestions] = useState([]);
   const [showResult, setShowResult] = useState(false);
 
   const handleNextBtn = () => {
     if (!selectedAns) return;
 
     if (selectedAns !== Questions[currQues].answer) {
+      const wrongQuestion = { index: Questions[currQues], userAnswer: selectedAns };
+      setWrongQuestions((prev) => [...prev, wrongQuestion])
       setWrongCount((prev) => prev + 1);
     }
 
@@ -161,92 +164,157 @@ const QuizComponent = () => {
   };
 
   return (
-   <main className="w-full bg-gradient-to-br from-slate-100 to-slate-200 md:p-10 flex justify-center py-2">
-  <div className="w-full max-w-3xl bg-white rounded-3xl shadow-xl overflow-hidden">
-    <div className="p-6 md:p-8">
-      <h1 className="text-3xl font-extrabold tracking-tight text-slate-800">
-        QUIZEE
-      </h1>
-      <h2 className="mt-2 text-lg font-medium text-slate-600 border-b pb-3">
-        {topic}
-      </h2>
-    </div>
+    <main className="w-full bg-gradient-to-br from-slate-100 to-slate-200 md:p-10 flex justify-center py-2">
+      <div className="w-full max-w-3xl bg-white rounded-3xl shadow-xl overflow-hidden">
+        <div className="p-6 md:p-8">
+          <h1 className="text-3xl font-extrabold tracking-tight text-slate-800">
+            QUIZEE
+          </h1>
+          <h2 className="mt-2 text-lg font-medium text-slate-600 border-b pb-3">
+            {topic}
+          </h2>
+        </div>
 
-    <img
-      src={topics.img}
-      alt={topic}
-      className="w-full h-56 object-cover mx-2 rounded-lg"
-    />
+        <img
+          src={topics.img}
+          alt={topic}
+          className="w-full h-56 object-cover mx-2 rounded-lg"
+        />
 
-    <div className="p-6 md:p-8">
-      <p className="text-sm font-medium text-slate-500 mb-1">
-        Question {currQues + 1} of {Questions.length}
-      </p>
+        <div className="p-6 md:p-8">
+          <p className="text-sm font-medium text-slate-500 mb-1">
+            Question {currQues + 1} of {Questions.length}
+          </p>
 
-      <p className="text-lg font-semibold text-slate-800 mb-6">
-        {Questions[currQues].question}
-      </p>
+          <p className="text-lg font-semibold text-slate-800 mb-6">
+            {Questions[currQues].question}
+          </p>
 
-      <form className="space-y-4">
-        {Questions[currQues].options.map((opt, i) => (
-          <label
-            key={i}
-            className={`flex items-center gap-3 rounded-xl border p-4 cursor-pointer transition-all
+          <form className="space-y-4">
+            {Questions[currQues].options.map((opt, i) => (
+              <label
+                key={i}
+                className={`flex items-center gap-3 rounded-xl border p-4 cursor-pointer transition-all
               ${selectedAns === opt
-                ? "border-blue-600 bg-blue-50"
-                : "border-slate-200 hover:border-slate-300 hover:bg-slate-50"
-              }`}
-          >
-            <input
-              type="radio"
-              name="option"
-              value={opt}
-              checked={selectedAns === opt}
-              onChange={() => setSelectedAns(opt)}
-              className="accent-blue-600"
-            />
-            <span className="text-slate-700">{opt}</span>
-          </label>
-        ))}
-      </form>
+                    ? "border-blue-600 bg-blue-50"
+                    : "border-slate-200 hover:border-slate-300 hover:bg-slate-50"
+                  }`}
+              >
+                <input
+                  type="radio"
+                  name="option"
+                  value={opt}
+                  checked={selectedAns === opt}
+                  onChange={() => setSelectedAns(opt)}
+                  className="accent-blue-600"
+                />
+                <span className="text-slate-700">{opt}</span>
+              </label>
+            ))}
+          </form>
 
-      <div className="flex justify-end mt-8">
-        <button
-          onClick={handleNextBtn}
-          disabled={!selectedAns}
-          className="px-6 py-2.5 rounded-xl font-semibold text-white bg-blue-600 hover:bg-blue-700 disabled:opacity-40 disabled:cursor-not-allowed transition"
-        >
-          {currQues === Questions.length - 1 ? "Finish Quiz" : "Next Question"}
-        </button>
+          <div className="flex justify-end mt-8">
+            <button
+              onClick={handleNextBtn}
+              disabled={!selectedAns}
+              className="px-6 py-2.5 rounded-xl font-semibold text-white bg-blue-600 hover:bg-blue-700 disabled:opacity-40 disabled:cursor-not-allowed transition"
+            >
+              {currQues === Questions.length - 1 ? "Finish Quiz" : "Next Question"}
+            </button>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
 
-  {showResult && (
-    <div className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center p-4">
-      <div className="bg-white rounded-2xl shadow-2xl w-full max-w-sm p-6 text-center">
-        <h3 className="text-2xl font-bold text-slate-800 mb-2">
-          Quiz Completed 
-        </h3>
+      {showResult && (
+        <div className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center p-4">
+          <div className="bg-white rounded-2xl shadow-2xl w-full max-w-4xl max-h-[90vh] flex flex-col overflow-hidden">
+            <div className="p-6 border-b text-center shrink-0">
+              <h3 className="text-2xl font-bold text-slate-800 mb-2">
+                Quiz Completed
+              </h3>
+              <p className="text-slate-600">
+                You got <span className="font-bold text-red-600">{wrongCount}</span> wrong out of {Questions.length}
+              </p>
+            </div>
 
-        <p className="text-slate-600 mb-6">
-          Wrong Answers{" "}
-          <span className="font-bold text-red-600">
-            {wrongCount}
-          </span>{" "}
-          / {Questions.length}
-        </p>
+            <div className="flex-1 overflow-y-auto p-6 space-y-8 bg-slate-50">
+              {wrongQuestions.length > 0 ? (
+                <>
+                  <h4 className="text-xl font-semibold text-slate-700 mb-4">Review Wrong Answers:</h4>
+                  {wrongQuestions.map((item, idx) => (
+                    <div key={idx} className="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+                      <p className="font-medium text-slate-800 mb-4">
+                        <span className="font-bold text-slate-400 mr-2">Q{Questions.indexOf(item.index) + 1}.</span>
+                        {item.index.question}
+                      </p>
 
-        <button
-          onClick={() => window.location.reload()}
-          className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2.5 rounded-xl transition"
-        >
-          Restart Quiz
-        </button>
-      </div>
-    </div>
-  )}
-</main>
+                      <div className="space-y-2">
+                        {item.index.options.map((opt, i) => {
+                          const isUserAnswer = item.userAnswer === opt;
+                          const isCorrectAnswer = item.index.answer === opt;
+
+                          let borderClass = "border-slate-200";
+                          let bgClass = "bg-white";
+                          let textClass = "text-slate-600";
+                          let icon = null;
+
+                          if (isCorrectAnswer) {
+                            borderClass = "border-green-500";
+                            bgClass = "bg-green-50";
+                            textClass = "text-green-700 font-medium";
+                            icon = <span className="text-green-600 ml-auto">✓</span>;
+                          } else if (isUserAnswer) {
+                            borderClass = "border-red-500";
+                            bgClass = "bg-red-50";
+                            textClass = "text-red-700 font-medium";
+                            icon = <span className="text-red-600 ml-auto">✗</span>;
+                          }
+
+                          return (
+                            <div
+                              key={i}
+                              className={`flex items-center gap-3 p-3 rounded-lg border ${borderClass} ${bgClass} ${textClass}`}
+                            >
+                              <div className={`w-4 h-4 rounded-full border flex items-center justify-center shrink-0
+                                ${isCorrectAnswer ? "border-green-500 bg-green-500" :
+                                  isUserAnswer ? "border-red-500 bg-red-500" : "border-slate-300"}`}
+                              >
+                                {(isCorrectAnswer || isUserAnswer) && <div className="w-1.5 h-1.5 bg-white rounded-full" />}
+                              </div>
+                              <span>{opt}</span>
+                              {icon}
+                            </div>
+                          );
+                        })}
+                      </div>
+
+                      <div className="mt-3 text-sm flex gap-4">
+                        <span className="text-red-600">Your Answer: {item.userAnswer}</span>
+                        <span className="text-green-600 font-medium">Correct Answer: {item.index.answer}</span>
+                      </div>
+                    </div>
+                  ))}
+                </>
+              ) : (
+                <div className="text-center py-10">
+                  <p className="text-2xl text-green-600 font-bold mb-2">Perfect Score! 🎉</p>
+                  <p className="text-slate-500">You answered all questions correctly.</p>
+                </div>
+              )}
+            </div>
+
+            <div className="p-6 border-t bg-white shrink-0">
+              <button
+                onClick={() => window.location.reload()}
+                className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-xl transition shadow-lg hover:shadow-blue-200"
+              >
+                Restart Quiz
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+    </main>
   );
 };
 
