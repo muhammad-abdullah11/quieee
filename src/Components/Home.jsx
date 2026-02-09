@@ -311,14 +311,29 @@ export default function Home() {
 
   return (
     <main className="p-8">
-      <h2 className="font-extrabold text-5xl p-6">How do you want to study?</h2>
-      <p className="text-2xl py-4 mx-9">
+      <h2 className="font-extrabold text-5xl p-6 text-center">How do you want to study?</h2>
+      <p className="text-2xl py-4 mx-9 text-center">
         <span className="active:bg-purple-400 rounded px-1">
           Master whatever you are learning with Quizee interactive flashcards,
           practice tests and study activities.
         </span>
-      </p>  
+      </p>
+      <div className="p-6 md:p-8 space-y-4 text-center">
+        <h2 className="text-2xl md:text-3xl font-bold">
+          Explore Our Latest Blogs
+        </h2>
 
+        <p className="text-zinc-600 text-sm md:text-base max-w-2xl mx-auto">
+          Discover insightful articles, coding tutorials, and in-depth guides
+          designed to help you grow your development skills.
+        </p>
+
+        <button
+          onClick={() => window.location.href = "/blogs"}
+          className="px-5 py-2.5 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 active:scale-95 transition-all duration-200 shadow-sm">
+          Read Blogs
+        </button>
+      </div>
       <div className="relative w-full px-4 sm:px-7 py-6">
         <button
           onClick={scrollLeft}

@@ -1,0 +1,2059 @@
+[
+  {
+  "id": 101,
+  "title": "HTML A-to-Z: The Complete Guide to HyperText Markup Language",
+  "slug": "html-complete-guide-a-to-z",
+  "excerpt": "Master HTML from basic document structure to advanced semantic elements, forms, multimedia, accessibility, and modern best practices. A complete developer-focused guide with practical code examples.",
+  "featuredImage": {
+    "url": "https://plus.unsplash.com/premium_photo-1675793715030-0584c8ec4a13?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aHRtbCUyMGNvdXJzZXxlbnwwfHwwfHx8MA%3D%3D",
+    "alt": "HTML code displayed on screen",
+    "width": 1200,
+    "height": 675,
+    "thumbnail": "/images/blog/html-guide-thumb.jpg"
+  },
+  "author": {
+    "id": 2,
+    "name": "Muhammad Usman",
+    "avatar": "https://images.unsplash.com/photo-1654110455429-cf322b40a906?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZSUyMHBpY3R1cmV8ZW58MHx8MHx8fDA%3D",
+    "bio": "Full-stack developer and technical writer specializing in modern web technologies and standards-based development.",
+    "title": "Web Developer & Technical Author",
+    "socialLinks": {
+      "twitter": "https://twitter.com/usmandeveloper",
+      "linkedin": "https://linkedin.com/in/usmandeveloper",
+      "instagram": "https://instagram.com/usmancode"
+    }
+  },
+  "publishedDate": "2026-02-09T10:00:00Z",
+  "updatedDate": "2026-02-09T10:00:00Z",
+  "readTime": 18,
+  "category": {
+    "id": 20,
+    "name": "Web Development",
+    "slug": "web-development"
+  },
+  "tags": [
+    { "id": 1, "name": "HTML", "slug": "html" },
+    { "id": 2, "name": "Frontend", "slug": "frontend" },
+    { "id": 3, "name": "Web Basics", "slug": "web-basics" },
+    { "id": 4, "name": "Markup", "slug": "markup" }
+  ],
+  "content": {
+    "introduction": {
+      "text": "HTML (HyperText Markup Language) is the foundation of every website on the internet. It structures content using elements, tags, and attributes. This guide covers HTML from A to Z — including document structure, semantic elements, forms, media, accessibility, tables, metadata, and modern best practices — strictly focused on HTML without CSS or JavaScript frameworks."
+    },
+    "sections": [
+      {
+        "heading": "1. HTML Fundamentals",
+        "subsections": [
+          {
+            "subheading": "Basic Document Structure",
+            "content": "Every HTML document follows a standard structure including the doctype declaration, html root element, head metadata section, and body content area.",
+            "codeSnippets": [
+              {
+                "title": "Basic HTML Template",
+                "language": "html",
+                "code": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>My First Page</title>\n</head>\n<body>\n  <h1>Hello World</h1>\n  <p>This is a basic HTML document.</p>\n</body>\n</html>"
+              }
+            ]
+          },
+          {
+            "subheading": "HTML Elements and Attributes",
+            "content": "HTML elements define structure, while attributes provide additional information such as links, identifiers, or metadata.",
+            "codeSnippets": [
+              {
+                "title": "Element with Attributes",
+                "language": "html",
+                "code": "<a href=\"https://example.com\" target=\"_blank\" title=\"Visit Example\">Visit Website</a>"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "2. Text and Content Elements",
+        "subsections": [
+          {
+            "subheading": "Headings and Paragraphs",
+            "content": "HTML provides six heading levels and paragraph elements to structure textual content hierarchically.",
+            "codeSnippets": [
+              {
+                "title": "Headings Example",
+                "language": "html",
+                "code": "<h1>Main Heading</h1>\n<h2>Sub Heading</h2>\n<p>This is a paragraph of text.</p>"
+              }
+            ]
+          },
+          {
+            "subheading": "Lists",
+            "content": "Lists can be ordered, unordered, or definition-based.",
+            "codeSnippets": [
+              {
+                "title": "Unordered and Ordered Lists",
+                "language": "html",
+                "code": "<ul>\n  <li>HTML</li>\n  <li>CSS</li>\n</ul>\n\n<ol>\n  <li>Step One</li>\n  <li>Step Two</li>\n</ol>"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "3. Links and Navigation",
+        "subsections": [
+          {
+            "subheading": "Anchor Links",
+            "content": "Anchor tags create hyperlinks to other pages, files, email addresses, or internal sections.",
+            "codeSnippets": [
+              {
+                "title": "Internal and External Links",
+                "language": "html",
+                "code": "<a href=\"about.html\">About Us</a>\n<a href=\"https://google.com\">Google</a>"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "4. Images and Multimedia",
+        "subsections": [
+          {
+            "subheading": "Images",
+            "content": "Images are embedded using the img element with required src and alt attributes.",
+            "codeSnippets": [
+              {
+                "title": "Image Example",
+                "language": "html",
+                "code": "<img src=\"photo.jpg\" alt=\"Beautiful Landscape\" width=\"600\" height=\"400\">"
+              }
+            ]
+          },
+          {
+            "subheading": "Audio and Video",
+            "content": "HTML5 provides native support for embedding audio and video files.",
+            "codeSnippets": [
+              {
+                "title": "Video Example",
+                "language": "html",
+                "code": "<video controls>\n  <source src=\"movie.mp4\" type=\"video/mp4\">\n  Your browser does not support video.\n</video>"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "5. Tables",
+        "subsections": [
+          {
+            "subheading": "Creating Tables",
+            "content": "Tables organize data into rows and columns using table, tr, th, and td elements.",
+            "codeSnippets": [
+              {
+                "title": "Basic Table",
+                "language": "html",
+                "code": "<table>\n  <tr>\n    <th>Name</th>\n    <th>Age</th>\n  </tr>\n  <tr>\n    <td>Ali</td>\n    <td>25</td>\n  </tr>\n</table>"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "6. Forms and Input Elements",
+        "subsections": [
+          {
+            "subheading": "Basic Form Structure",
+            "content": "Forms collect user input and send data to a server using various input types.",
+            "codeSnippets": [
+              {
+                "title": "Simple Form",
+                "language": "html",
+                "code": "<form action=\"/submit\" method=\"POST\">\n  <label for=\"name\">Name:</label>\n  <input type=\"text\" id=\"name\" name=\"name\" required>\n  <button type=\"submit\">Submit</button>\n</form>"
+              }
+            ]
+          },
+          {
+            "subheading": "Modern Input Types",
+            "content": "HTML supports specialized input types for better user experience.",
+            "codeSnippets": [
+              {
+                "title": "Advanced Inputs",
+                "language": "html",
+                "code": "<input type=\"email\">\n<input type=\"date\">\n<input type=\"color\">\n<input type=\"range\" min=\"0\" max=\"100\">"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "7. Semantic HTML",
+        "subsections": [
+          {
+            "subheading": "Structural Semantic Elements",
+            "content": "Semantic elements clearly describe their meaning to browsers and developers.",
+            "codeSnippets": [
+              {
+                "title": "Semantic Layout Example",
+                "language": "html",
+                "code": "<header>\n  <h1>Website Title</h1>\n</header>\n<main>\n  <article>\n    <h2>Article Heading</h2>\n    <p>Article content...</p>\n  </article>\n</main>\n<footer>\n  <p>© 2026</p>\n</footer>"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "8. Metadata and SEO in HTML",
+        "subsections": [
+          {
+            "subheading": "Meta Tags",
+            "content": "Meta tags provide information about the page to search engines and browsers.",
+            "codeSnippets": [
+              {
+                "title": "SEO Meta Tags",
+                "language": "html",
+                "code": "<meta name=\"description\" content=\"Complete HTML Guide\">\n<meta name=\"keywords\" content=\"HTML, Web Development\">\n<meta name=\"author\" content=\"Muhammad Usman\">"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "9. Accessibility in HTML",
+        "subsections": [
+          {
+            "subheading": "Accessible Markup",
+            "content": "Accessible HTML ensures content is usable by screen readers and assistive technologies.",
+            "codeSnippets": [
+              {
+                "title": "Accessible Button",
+                "language": "html",
+                "code": "<button aria-label=\"Close Menu\">X</button>"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "conclusion": {
+      "text": "HTML is the structural backbone of the web. Mastering it means understanding document structure, semantic elements, accessibility, forms, tables, metadata, and multimedia. While technologies evolve, HTML remains the universal language of web content. A strong HTML foundation ensures clean, accessible, and future-proof web development."
+    }
+  },
+  "engagement": {
+    "views": 12334,
+    "likes": 223,
+    "shares": 12,
+    "comments": 32,
+    "bookmarks": 9
+  },
+  "comments": {
+    "enabled": true,
+    "moderated": true,
+    "count": 0
+  },
+  "newsletter": {
+    "enabled": true,
+    "ctaText": "Get weekly web development tutorials and HTML deep dives delivered to your inbox."
+  }
+},
+  {
+    "id": 102,
+    "title": "CSS A-to-Z: The Complete Guide to Cascading Style Sheets",
+    "slug": "css-complete-guide-a-to-z",
+    "excerpt": "Master CSS from basic styling to advanced layouts, animations, responsive design, and modern best practices. A complete developer-focused guide with practical code examples.",
+    "featuredImage": {
+      "url": "https://images.unsplash.com/photo-1523437113738-bbd3cc89fb19?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y3NzfGVufDB8fDB8fHww",
+      "alt": "CSS code displayed on screen",
+      "width": 1200,
+      "height": 675,
+      "thumbnail": "/images/blog/css-guide-thumb.jpg"
+    },
+    "author": {
+      "id": 2,
+      "name": "Muhammad Usman",
+      "avatar": "https://images.unsplash.com/photo-1654110455429-cf322b40a906?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZSUyMHBpY3R1cmV8ZW58MHx8MHx8fDA%3D",
+      "bio": "Full-stack developer and technical writer specializing in modern web technologies and standards-based development.",
+      "title": "Web Developer & Technical Author",
+      "socialLinks": {
+        "twitter": "https://twitter.com/usmandeveloper",
+        "linkedin": "https://linkedin.com/in/usmandeveloper",
+        "instagram": "https://instagram.com/usmancode"
+      }
+    },
+    "publishedDate": "2026-02-09T10:00:00Z",
+    "updatedDate": "2026-02-09T10:00:00Z",
+    "readTime": 18,
+    "category": {
+      "id": 20,
+      "name": "Web Development",
+      "slug": "web-development"
+    },
+    "tags": [
+      { "id": 5, "name": "CSS", "slug": "css" },
+      { "id": 2, "name": "Frontend", "slug": "frontend" },
+      { "id": 6, "name": "Styling", "slug": "styling" },
+      { "id": 7, "name": "Design", "slug": "design" }
+    ],
+    "content": {
+      "introduction": {
+        "text": "CSS (Cascading Style Sheets) is the styling language that brings visual design to the web. It controls layout, colors, fonts, animations, and responsive behavior. This guide covers CSS from A to Z — including selectors, box model, flexbox, grid, animations, transitions, responsive design, and modern best practices — strictly focused on CSS fundamentals and advanced techniques."
+      },
+      "sections": [
+        {
+          "heading": "1. CSS Fundamentals",
+          "subsections": [
+            {
+              "subheading": "Basic Syntax and Selectors",
+              "content": "CSS uses selectors to target HTML elements and apply styles through property-value pairs.",
+              "codeSnippets": [
+                {
+                  "title": "Basic CSS Syntax",
+                  "language": "css",
+                  "code": "/* Element Selector */\np {\n  color: blue;\n  font-size: 16px;\n}\n\n/* Class Selector */\n.container {\n  width: 100%;\n  max-width: 1200px;\n}\n\n/* ID Selector */\n#header {\n  background-color: #333;\n}"
+                }
+              ]
+            },
+            {
+              "subheading": "The Box Model",
+              "content": "Every element in CSS is a box with content, padding, border, and margin areas.",
+              "codeSnippets": [
+                {
+                  "title": "Box Model Example",
+                  "language": "css",
+                  "code": ".box {\n  width: 300px;\n  padding: 20px;\n  border: 2px solid black;\n  margin: 10px;\n}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "2. Colors and Typography",
+          "subsections": [
+            {
+              "subheading": "Working with Colors",
+              "content": "CSS supports various color formats including named colors, hex, RGB, and HSL.",
+              "codeSnippets": [
+                {
+                  "title": "Color Examples",
+                  "language": "css",
+                  "code": ".element {\n  color: #ff6b6b;\n  background-color: rgb(255, 107, 107);\n  border-color: hsl(0, 100%, 71%);\n}"
+                }
+              ]
+            },
+            {
+              "subheading": "Typography",
+              "content": "Control text appearance with font properties, line height, and text styling.",
+              "codeSnippets": [
+                {
+                  "title": "Typography Styling",
+                  "language": "css",
+                  "code": "body {\n  font-family: 'Arial', sans-serif;\n  font-size: 16px;\n  line-height: 1.6;\n  font-weight: 400;\n}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "3. Layout Techniques",
+          "subsections": [
+            {
+              "subheading": "Flexbox",
+              "content": "Flexbox is a one-dimensional layout method for arranging items in rows or columns.",
+              "codeSnippets": [
+                {
+                  "title": "Flexbox Container",
+                  "language": "css",
+                  "code": ".flex-container {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  gap: 20px;\n}"
+                }
+              ]
+            },
+            {
+              "subheading": "CSS Grid",
+              "content": "Grid is a two-dimensional layout system for creating complex responsive layouts.",
+              "codeSnippets": [
+                {
+                  "title": "Grid Layout",
+                  "language": "css",
+                  "code": ".grid-container {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  gap: 20px;\n}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "4. Responsive Design",
+          "subsections": [
+            {
+              "subheading": "Media Queries",
+              "content": "Media queries allow styles to adapt based on screen size and device characteristics.",
+              "codeSnippets": [
+                {
+                  "title": "Responsive Breakpoints",
+                  "language": "css",
+                  "code": "@media (max-width: 768px) {\n  .container {\n    width: 100%;\n    padding: 10px;\n  }\n}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "5. Animations and Transitions",
+          "subsections": [
+            {
+              "subheading": "CSS Transitions",
+              "content": "Transitions create smooth changes between property values.",
+              "codeSnippets": [
+                {
+                  "title": "Transition Example",
+                  "language": "css",
+                  "code": ".button {\n  background-color: blue;\n  transition: background-color 0.3s ease;\n}\n\n.button:hover {\n  background-color: darkblue;\n}"
+                }
+              ]
+            },
+            {
+              "subheading": "CSS Animations",
+              "content": "Animations define keyframes for complex motion and effects.",
+              "codeSnippets": [
+                {
+                  "title": "Keyframe Animation",
+                  "language": "css",
+                  "code": "@keyframes slideIn {\n  from {\n    transform: translateX(-100%);\n  }\n  to {\n    transform: translateX(0);\n  }\n}\n\n.element {\n  animation: slideIn 0.5s ease-out;\n}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "6. Advanced Selectors",
+          "subsections": [
+            {
+              "subheading": "Pseudo-classes and Pseudo-elements",
+              "content": "Advanced selectors target specific states and parts of elements.",
+              "codeSnippets": [
+                {
+                  "title": "Advanced Selectors",
+                  "language": "css",
+                  "code": "a:hover {\n  color: red;\n}\n\np::first-line {\n  font-weight: bold;\n}\n\nli:nth-child(odd) {\n  background-color: #f0f0f0;\n}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "7. CSS Variables",
+          "subsections": [
+            {
+              "subheading": "Custom Properties",
+              "content": "CSS variables allow reusable values throughout stylesheets.",
+              "codeSnippets": [
+                {
+                  "title": "Using CSS Variables",
+                  "language": "css",
+                  "code": ":root {\n  --primary-color: #3498db;\n  --spacing: 16px;\n}\n\n.button {\n  background-color: var(--primary-color);\n  padding: var(--spacing);\n}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "8. CSS Positioning",
+          "subsections": [
+            {
+              "subheading": "Position Properties",
+              "content": "CSS positioning controls element placement with static, relative, absolute, fixed, and sticky values.",
+              "codeSnippets": [
+                {
+                  "title": "Positioning Example",
+                  "language": "css",
+                  "code": ".fixed-header {\n  position: fixed;\n  top: 0;\n  width: 100%;\n}\n\n.absolute-element {\n  position: absolute;\n  top: 20px;\n  right: 20px;\n}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "9. Modern CSS Features",
+          "subsections": [
+            {
+              "subheading": "Container Queries and Modern Units",
+              "content": "Modern CSS includes container queries, clamp(), and advanced viewport units.",
+              "codeSnippets": [
+                {
+                  "title": "Modern CSS",
+                  "language": "css",
+                  "code": ".container {\n  font-size: clamp(1rem, 2.5vw, 2rem);\n}\n\n@container (min-width: 400px) {\n  .card {\n    display: grid;\n  }\n}"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "conclusion": {
+        "text": "CSS is the visual backbone of the web. Mastering it means understanding selectors, the box model, layout systems, responsive design, animations, and modern features. While trends change, CSS fundamentals remain essential. A strong CSS foundation ensures beautiful, responsive, and maintainable web designs."
+      }
+    },
+    "engagement": {
+      "views": 12334,
+      "likes": 223,
+      "shares": 12,
+      "comments": 32,
+      "bookmarks": 9
+    },
+    "comments": {
+      "enabled": true,
+      "moderated": true,
+      "count": 0
+    },
+    "newsletter": {
+      "enabled": true,
+      "ctaText": "Get weekly web development tutorials and CSS deep dives delivered to your inbox."
+    }
+  },
+  {
+    "id": 103,
+    "title": "JavaScript A-to-Z: The Complete Guide to Modern JavaScript",
+    "slug": "javascript-complete-guide-a-to-z",
+    "excerpt": "Master JavaScript from basic syntax to advanced concepts including ES6+, async programming, DOM manipulation, and modern best practices. A complete developer-focused guide with practical code examples.",
+    "featuredImage": {
+      "url": "https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8amF2YXNjcmlwdHxlbnwwfHwwfHx8MA%3D%3D",
+      "alt": "JavaScript code displayed on screen",
+      "width": 1200,
+      "height": 675,
+      "thumbnail": "/images/blog/javascript-guide-thumb.jpg"
+    },
+    "author": {
+      "id": 2,
+      "name": "Muhammad Usman",
+      "avatar": "https://images.unsplash.com/photo-1654110455429-cf322b40a906?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZSUyMHBpY3R1cmV8ZW58MHx8MHx8fDA%3D",
+      "bio": "Full-stack developer and technical writer specializing in modern web technologies and standards-based development.",
+      "title": "Web Developer & Technical Author",
+      "socialLinks": {
+        "twitter": "https://twitter.com/usmandeveloper",
+        "linkedin": "https://linkedin.com/in/usmandeveloper",
+        "instagram": "https://instagram.com/usmancode"
+      }
+    },
+    "publishedDate": "2026-02-09T10:00:00Z",
+    "updatedDate": "2026-02-09T10:00:00Z",
+    "readTime": 18,
+    "category": {
+      "id": 20,
+      "name": "Web Development",
+      "slug": "web-development"
+    },
+    "tags": [
+      { "id": 8, "name": "JavaScript", "slug": "javascript" },
+      { "id": 2, "name": "Frontend", "slug": "frontend" },
+      { "id": 9, "name": "Programming", "slug": "programming" },
+      { "id": 10, "name": "ES6", "slug": "es6" }
+    ],
+    "content": {
+      "introduction": {
+        "text": "JavaScript is the programming language of the web, enabling interactive and dynamic user experiences. It runs in browsers and on servers via Node.js. This guide covers JavaScript from A to Z — including variables, functions, objects, arrays, async programming, DOM manipulation, ES6+ features, and modern best practices — strictly focused on JavaScript fundamentals and advanced concepts."
+      },
+      "sections": [
+        {
+          "heading": "1. JavaScript Fundamentals",
+          "subsections": [
+            {
+              "subheading": "Variables and Data Types",
+              "content": "JavaScript uses let, const, and var to declare variables with different scoping rules and supports primitive and reference data types.",
+              "codeSnippets": [
+                {
+                  "title": "Variable Declaration",
+                  "language": "javascript",
+                  "code": "// Modern variable declarations\nlet name = 'John';\nconst age = 30;\nvar city = 'New York'; // avoid using var\n\n// Data types\nlet number = 42;\nlet string = 'Hello';\nlet boolean = true;\nlet array = [1, 2, 3];\nlet object = { key: 'value' };"
+                }
+              ]
+            },
+            {
+              "subheading": "Operators and Expressions",
+              "content": "JavaScript provides arithmetic, comparison, logical, and assignment operators for manipulating values.",
+              "codeSnippets": [
+                {
+                  "title": "Common Operators",
+                  "language": "javascript",
+                  "code": "let sum = 10 + 5;\nlet isEqual = (10 === 10);\nlet logicalAnd = true && false;\nlet ternary = age >= 18 ? 'Adult' : 'Minor';"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "2. Functions",
+          "subsections": [
+            {
+              "subheading": "Function Declaration and Expression",
+              "content": "Functions are reusable blocks of code that can be declared or expressed.",
+              "codeSnippets": [
+                {
+                  "title": "Function Types",
+                  "language": "javascript",
+                  "code": "// Function declaration\nfunction greet(name) {\n  return `Hello, ${name}!`;\n}\n\n// Function expression\nconst add = function(a, b) {\n  return a + b;\n};\n\n// Arrow function (ES6)\nconst multiply = (a, b) => a * b;"
+                }
+              ]
+            },
+            {
+              "subheading": "Higher-Order Functions",
+              "content": "Functions that take other functions as arguments or return functions.",
+              "codeSnippets": [
+                {
+                  "title": "Array Methods",
+                  "language": "javascript",
+                  "code": "const numbers = [1, 2, 3, 4, 5];\n\nconst doubled = numbers.map(n => n * 2);\nconst evens = numbers.filter(n => n % 2 === 0);\nconst sum = numbers.reduce((acc, n) => acc + n, 0);"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "3. Objects and Arrays",
+          "subsections": [
+            {
+              "subheading": "Working with Objects",
+              "content": "Objects store collections of key-value pairs and can be created and manipulated in various ways.",
+              "codeSnippets": [
+                {
+                  "title": "Object Operations",
+                  "language": "javascript",
+                  "code": "const person = {\n  name: 'Alice',\n  age: 25,\n  greet() {\n    return `Hi, I'm ${this.name}`;\n  }\n};\n\n// Destructuring\nconst { name, age } = person;\n\n// Spread operator\nconst updatedPerson = { ...person, city: 'NYC' };"
+                }
+              ]
+            },
+            {
+              "subheading": "Array Manipulation",
+              "content": "Arrays are ordered collections with powerful built-in methods.",
+              "codeSnippets": [
+                {
+                  "title": "Array Methods",
+                  "language": "javascript",
+                  "code": "const fruits = ['apple', 'banana', 'orange'];\n\nfruits.push('grape');\nfruits.pop();\nconst sliced = fruits.slice(0, 2);\nconst joined = fruits.join(', ');"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "4. Asynchronous JavaScript",
+          "subsections": [
+            {
+              "subheading": "Promises",
+              "content": "Promises represent eventual completion or failure of asynchronous operations.",
+              "codeSnippets": [
+                {
+                  "title": "Promise Example",
+                  "language": "javascript",
+                  "code": "const fetchData = () => {\n  return new Promise((resolve, reject) => {\n    setTimeout(() => {\n      resolve('Data loaded');\n    }, 1000);\n  });\n};\n\nfetchData()\n  .then(data => console.log(data))\n  .catch(err => console.error(err));"
+                }
+              ]
+            },
+            {
+              "subheading": "Async/Await",
+              "content": "Async/await syntax provides cleaner asynchronous code handling.",
+              "codeSnippets": [
+                {
+                  "title": "Async/Await",
+                  "language": "javascript",
+                  "code": "async function getData() {\n  try {\n    const response = await fetch('https://api.example.com/data');\n    const data = await response.json();\n    return data;\n  } catch (error) {\n    console.error('Error:', error);\n  }\n}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "5. DOM Manipulation",
+          "subsections": [
+            {
+              "subheading": "Selecting and Modifying Elements",
+              "content": "JavaScript can interact with HTML elements through the Document Object Model.",
+              "codeSnippets": [
+                {
+                  "title": "DOM Operations",
+                  "language": "javascript",
+                  "code": "// Selecting elements\nconst element = document.querySelector('.my-class');\nconst elements = document.querySelectorAll('p');\n\n// Modifying elements\nelement.textContent = 'New text';\nelement.classList.add('active');\nelement.style.color = 'blue';"
+                }
+              ]
+            },
+            {
+              "subheading": "Event Handling",
+              "content": "Events allow JavaScript to respond to user interactions.",
+              "codeSnippets": [
+                {
+                  "title": "Event Listeners",
+                  "language": "javascript",
+                  "code": "const button = document.querySelector('button');\n\nbutton.addEventListener('click', (event) => {\n  console.log('Button clicked!');\n  event.preventDefault();\n});"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "6. ES6+ Features",
+          "subsections": [
+            {
+              "subheading": "Template Literals and Destructuring",
+              "content": "Modern JavaScript features improve code readability and efficiency.",
+              "codeSnippets": [
+                {
+                  "title": "ES6 Syntax",
+                  "language": "javascript",
+                  "code": "// Template literals\nconst name = 'World';\nconst greeting = `Hello, ${name}!`;\n\n// Destructuring\nconst [first, second] = [1, 2];\nconst { x, y } = { x: 10, y: 20 };"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "7. Classes and OOP",
+          "subsections": [
+            {
+              "subheading": "ES6 Classes",
+              "content": "Classes provide a cleaner syntax for object-oriented programming in JavaScript.",
+              "codeSnippets": [
+                {
+                  "title": "Class Example",
+                  "language": "javascript",
+                  "code": "class Animal {\n  constructor(name) {\n    this.name = name;\n  }\n  \n  speak() {\n    return `${this.name} makes a sound`;\n  }\n}\n\nclass Dog extends Animal {\n  speak() {\n    return `${this.name} barks`;\n  }\n}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "8. Error Handling",
+          "subsections": [
+            {
+              "subheading": "Try-Catch Blocks",
+              "content": "Error handling prevents crashes and provides graceful error recovery.",
+              "codeSnippets": [
+                {
+                  "title": "Error Handling",
+                  "language": "javascript",
+                  "code": "try {\n  const result = riskyOperation();\n  console.log(result);\n} catch (error) {\n  console.error('An error occurred:', error.message);\n} finally {\n  console.log('Cleanup code');\n}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "9. Modules",
+          "subsections": [
+            {
+              "subheading": "ES6 Modules",
+              "content": "Modules allow code organization and reusability across files.",
+              "codeSnippets": [
+                {
+                  "title": "Import/Export",
+                  "language": "javascript",
+                  "code": "// Export\nexport const PI = 3.14159;\nexport function square(x) {\n  return x * x;\n}\n\n// Import\nimport { PI, square } from './math.js';\nimport * as math from './math.js';"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "conclusion": {
+        "text": "JavaScript is the dynamic backbone of modern web development. Mastering it means understanding variables, functions, objects, asynchronous programming, DOM manipulation, and ES6+ features. While frameworks come and go, JavaScript fundamentals remain essential. A strong JavaScript foundation ensures powerful, interactive, and maintainable web applications."
+      }
+    },
+    "engagement": {
+      "views": 12334,
+      "likes": 223,
+      "shares": 12,
+      "comments": 32,
+      "bookmarks": 9
+    },
+    "comments": {
+      "enabled": true,
+      "moderated": true,
+      "count": 0
+    },
+    "newsletter": {
+      "enabled": true,
+      "ctaText": "Get weekly web development tutorials and JavaScript deep dives delivered to your inbox."
+    }
+  },
+  {
+    "id": 104,
+    "title": "Python A-to-Z: The Complete Guide to Python Programming",
+    "slug": "python-complete-guide-a-to-z",
+    "excerpt": "Master Python from basic syntax to advanced concepts including data structures, OOP, file handling, libraries, and modern best practices. A complete developer-focused guide with practical code examples.",
+    "featuredImage": {
+      "url": "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHl0aG9ufGVufDB8fDB8fHww",
+      "alt": "Python code displayed on screen",
+      "width": 1200,
+      "height": 675,
+      "thumbnail": "/images/blog/python-guide-thumb.jpg"
+    },
+    "author": {
+      "id": 2,
+      "name": "Muhammad Usman",
+      "avatar": "https://images.unsplash.com/photo-1654110455429-cf322b40a906?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZSUyMHBpY3R1cmV8ZW58MHx8MHx8fDA%3D",
+      "bio": "Full-stack developer and technical writer specializing in modern web technologies and standards-based development.",
+      "title": "Web Developer & Technical Author",
+      "socialLinks": {
+        "twitter": "https://twitter.com/usmandeveloper",
+        "linkedin": "https://linkedin.com/in/usmandeveloper",
+        "instagram": "https://instagram.com/usmancode"
+      }
+    },
+    "publishedDate": "2026-02-09T10:00:00Z",
+    "updatedDate": "2026-02-09T10:00:00Z",
+    "readTime": 18,
+    "category": {
+      "id": 21,
+      "name": "Programming",
+      "slug": "programming"
+    },
+    "tags": [
+      { "id": 11, "name": "Python", "slug": "python" },
+      { "id": 9, "name": "Programming", "slug": "programming" },
+      { "id": 12, "name": "Backend", "slug": "backend" },
+      { "id": 13, "name": "Data Science", "slug": "data-science" }
+    ],
+    "content": {
+      "introduction": {
+        "text": "Python is a versatile, high-level programming language known for its simplicity and readability. It's used in web development, data science, automation, AI, and more. This guide covers Python from A to Z — including syntax, data structures, functions, OOP, file handling, libraries, and modern best practices — strictly focused on Python fundamentals and advanced programming concepts."
+      },
+      "sections": [
+        {
+          "heading": "1. Python Fundamentals",
+          "subsections": [
+            {
+              "subheading": "Variables and Data Types",
+              "content": "Python is dynamically typed and supports various data types including integers, floats, strings, and booleans.",
+              "codeSnippets": [
+                {
+                  "title": "Basic Variables",
+                  "language": "python",
+                  "code": "# Variable assignments\nname = 'Alice'\nage = 30\nheight = 5.7\nis_student = False\n\n# Multiple assignment\nx, y, z = 1, 2, 3\n\n# Type checking\nprint(type(name))  # <class 'str'>"
+                }
+              ]
+            },
+            {
+              "subheading": "Operators and Expressions",
+              "content": "Python provides arithmetic, comparison, logical, and assignment operators.",
+              "codeSnippets": [
+                {
+                  "title": "Python Operators",
+                  "language": "python",
+                  "code": "# Arithmetic\nsum_val = 10 + 5\npower = 2 ** 3\n\n# Comparison\nis_equal = (10 == 10)\n\n# Logical\nresult = True and False\n\n# Membership\nlist_check = 5 in [1, 2, 3, 4, 5]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "2. Control Flow",
+          "subsections": [
+            {
+              "subheading": "Conditional Statements",
+              "content": "Python uses if, elif, and else for conditional execution.",
+              "codeSnippets": [
+                {
+                  "title": "If-Else Example",
+                  "language": "python",
+                  "code": "age = 20\n\nif age < 18:\n    print('Minor')\nelif age < 65:\n    print('Adult')\nelse:\n    print('Senior')"
+                }
+              ]
+            },
+            {
+              "subheading": "Loops",
+              "content": "Python supports for and while loops for iteration.",
+              "codeSnippets": [
+                {
+                  "title": "Loop Examples",
+                  "language": "python",
+                  "code": "# For loop\nfor i in range(5):\n    print(i)\n\n# While loop\ncount = 0\nwhile count < 5:\n    print(count)\n    count += 1\n\n# List comprehension\nsquares = [x**2 for x in range(10)]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "3. Data Structures",
+          "subsections": [
+            {
+              "subheading": "Lists and Tuples",
+              "content": "Lists are mutable ordered collections, while tuples are immutable.",
+              "codeSnippets": [
+                {
+                  "title": "Lists and Tuples",
+                  "language": "python",
+                  "code": "# Lists\nfruits = ['apple', 'banana', 'orange']\nfruits.append('grape')\nfruits[0] = 'mango'\n\n# Tuples\ncoordinates = (10, 20)\n# coordinates[0] = 15  # Error: tuples are immutable"
+                }
+              ]
+            },
+            {
+              "subheading": "Dictionaries and Sets",
+              "content": "Dictionaries store key-value pairs, sets store unique unordered elements.",
+              "codeSnippets": [
+                {
+                  "title": "Dictionaries and Sets",
+                  "language": "python",
+                  "code": "# Dictionary\nperson = {\n    'name': 'John',\n    'age': 30,\n    'city': 'NYC'\n}\n\nprint(person['name'])\nperson['email'] = 'john@example.com'\n\n# Set\nunique_numbers = {1, 2, 3, 3, 4}\nprint(unique_numbers)  # {1, 2, 3, 4}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "4. Functions",
+          "subsections": [
+            {
+              "subheading": "Defining Functions",
+              "content": "Functions are reusable blocks of code defined with the def keyword.",
+              "codeSnippets": [
+                {
+                  "title": "Function Examples",
+                  "language": "python",
+                  "code": "# Basic function\ndef greet(name):\n    return f'Hello, {name}!'\n\n# Default parameters\ndef power(base, exp=2):\n    return base ** exp\n\n# Lambda function\nsquare = lambda x: x ** 2"
+                }
+              ]
+            },
+            {
+              "subheading": "Advanced Function Concepts",
+              "content": "Python supports *args, **kwargs, and decorators for advanced function usage.",
+              "codeSnippets": [
+                {
+                  "title": "Advanced Functions",
+                  "language": "python",
+                  "code": "# Variable arguments\ndef sum_all(*args):\n    return sum(args)\n\n# Keyword arguments\ndef build_profile(**kwargs):\n    return kwargs\n\n# Decorator\ndef uppercase_decorator(func):\n    def wrapper():\n        result = func()\n        return result.upper()\n    return wrapper"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "5. Object-Oriented Programming",
+          "subsections": [
+            {
+              "subheading": "Classes and Objects",
+              "content": "Python supports OOP with classes, inheritance, and encapsulation.",
+              "codeSnippets": [
+                {
+                  "title": "Class Example",
+                  "language": "python",
+                  "code": "class Dog:\n    def __init__(self, name, age):\n        self.name = name\n        self.age = age\n    \n    def bark(self):\n        return f'{self.name} says woof!'\n\n# Creating instance\nmy_dog = Dog('Buddy', 3)\nprint(my_dog.bark())"
+                }
+              ]
+            },
+            {
+              "subheading": "Inheritance",
+              "content": "Classes can inherit from other classes to reuse and extend functionality.",
+              "codeSnippets": [
+                {
+                  "title": "Inheritance Example",
+                  "language": "python",
+                  "code": "class Animal:\n    def __init__(self, name):\n        self.name = name\n    \n    def speak(self):\n        pass\n\nclass Cat(Animal):\n    def speak(self):\n        return f'{self.name} says meow!'\n\ncat = Cat('Whiskers')\nprint(cat.speak())"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "6. File Handling",
+          "subsections": [
+            {
+              "subheading": "Reading and Writing Files",
+              "content": "Python provides simple methods to read from and write to files.",
+              "codeSnippets": [
+                {
+                  "title": "File Operations",
+                  "language": "python",
+                  "code": "# Writing to file\nwith open('data.txt', 'w') as file:\n    file.write('Hello, World!')\n\n# Reading from file\nwith open('data.txt', 'r') as file:\n    content = file.read()\n    print(content)\n\n# Reading lines\nwith open('data.txt', 'r') as file:\n    lines = file.readlines()"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "7. Exception Handling",
+          "subsections": [
+            {
+              "subheading": "Try-Except Blocks",
+              "content": "Handle errors gracefully using try-except blocks.",
+              "codeSnippets": [
+                {
+                  "title": "Error Handling",
+                  "language": "python",
+                  "code": "try:\n    result = 10 / 0\nexcept ZeroDivisionError:\n    print('Cannot divide by zero!')\nexcept Exception as e:\n    print(f'An error occurred: {e}')\nfinally:\n    print('Cleanup code')"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "8. Modules and Packages",
+          "subsections": [
+            {
+              "subheading": "Importing Modules",
+              "content": "Organize code into modules and import functionality as needed.",
+              "codeSnippets": [
+                {
+                  "title": "Module Import",
+                  "language": "python",
+                  "code": "# Import entire module\nimport math\nprint(math.pi)\n\n# Import specific function\nfrom datetime import datetime\nprint(datetime.now())\n\n# Import with alias\nimport numpy as np"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "9. Common Libraries",
+          "subsections": [
+            {
+              "subheading": "Popular Python Libraries",
+              "content": "Python has rich ecosystem of libraries for various tasks.",
+              "codeSnippets": [
+                {
+                  "title": "Library Examples",
+                  "language": "python",
+                  "code": "# NumPy for numerical computing\nimport numpy as np\narray = np.array([1, 2, 3, 4])\n\n# Pandas for data analysis\nimport pandas as pd\ndf = pd.DataFrame({'A': [1, 2], 'B': [3, 4]})\n\n# Requests for HTTP\nimport requests\nresponse = requests.get('https://api.example.com')"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "conclusion": {
+        "text": "Python is a powerful and versatile programming language. Mastering it means understanding syntax, data structures, OOP, file handling, and its extensive library ecosystem. While tools and frameworks evolve, Python fundamentals remain constant. A strong Python foundation enables development across web, data science, automation, and AI domains."
+      }
+    },
+    "engagement": {
+      "views": 12334,
+      "likes": 223,
+      "shares": 12,
+      "comments": 32,
+      "bookmarks": 9
+    },
+    "comments": {
+      "enabled": true,
+      "moderated": true,
+      "count": 0
+    },
+    "newsletter": {
+      "enabled": true,
+      "ctaText": "Get weekly programming tutorials and Python deep dives delivered to your inbox."
+    }
+  },
+  {
+    "id": 105,
+    "title": "Java A-to-Z: The Complete Guide to Java Programming",
+    "slug": "java-complete-guide-a-to-z",
+    "excerpt": "Master Java from basic syntax to advanced concepts including OOP, collections, multithreading, and modern best practices. A complete developer-focused guide with practical code examples.",
+    "featuredImage": {
+      "url": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8amF2YXxlbnwwfHwwfHx8MA%3D%3D",
+      "alt": "Java code displayed on screen",
+      "width": 1200,
+      "height": 675,
+      "thumbnail": "/images/blog/java-guide-thumb.jpg"
+    },
+    "author": {
+      "id": 2,
+      "name": "Muhammad Usman",
+      "avatar": "https://images.unsplash.com/photo-1654110455429-cf322b40a906?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZSUyMHBpY3R1cmV8ZW58MHx8MHx8fDA%3D",
+      "bio": "Full-stack developer and technical writer specializing in modern web technologies and standards-based development.",
+      "title": "Web Developer & Technical Author",
+      "socialLinks": {
+        "twitter": "https://twitter.com/usmandeveloper",
+        "linkedin": "https://linkedin.com/in/usmandeveloper",
+        "instagram": "https://instagram.com/usmancode"
+      }
+    },
+    "publishedDate": "2026-02-09T10:00:00Z",
+    "updatedDate": "2026-02-09T10:00:00Z",
+    "readTime": 18,
+    "category": {
+      "id": 21,
+      "name": "Programming",
+      "slug": "programming"
+    },
+    "tags": [
+      { "id": 14, "name": "Java", "slug": "java" },
+      { "id": 9, "name": "Programming", "slug": "programming" },
+      { "id": 12, "name": "Backend", "slug": "backend" },
+      { "id": 15, "name": "OOP", "slug": "oop" }
+    ],
+    "content": {
+      "introduction": {
+        "text": "Java is a powerful, object-oriented programming language known for platform independence and enterprise-level applications. It runs on the Java Virtual Machine (JVM) and follows the 'write once, run anywhere' principle. This guide covers Java from A to Z — including syntax, OOP, collections, exception handling, multithreading, and modern best practices — strictly focused on Java fundamentals and advanced programming concepts."
+      },
+      "sections": [
+        {
+          "heading": "1. Java Fundamentals",
+          "subsections": [
+            {
+              "subheading": "Basic Syntax and Structure",
+              "content": "Every Java program requires a class and a main method as the entry point.",
+              "codeSnippets": [
+                {
+                  "title": "Hello World Program",
+                  "language": "java",
+                  "code": "public class HelloWorld {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}"
+                }
+              ]
+            },
+            {
+              "subheading": "Variables and Data Types",
+              "content": "Java is strongly typed with primitive and reference data types.",
+              "codeSnippets": [
+                {
+                  "title": "Variable Declaration",
+                  "language": "java",
+                  "code": "// Primitive types\nint age = 30;\ndouble salary = 50000.50;\nboolean isActive = true;\nchar grade = 'A';\n\n// Reference types\nString name = \"Alice\";\nInteger count = 100;\n\n// Constants\nfinal double PI = 3.14159;"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "2. Control Flow",
+          "subsections": [
+            {
+              "subheading": "Conditional Statements",
+              "content": "Java uses if-else, switch statements for decision making.",
+              "codeSnippets": [
+                {
+                  "title": "If-Else and Switch",
+                  "language": "java",
+                  "code": "// If-else\nint score = 85;\nif (score >= 90) {\n    System.out.println(\"A\");\n} else if (score >= 80) {\n    System.out.println(\"B\");\n} else {\n    System.out.println(\"C\");\n}\n\n// Switch\nswitch (day) {\n    case \"Monday\":\n        System.out.println(\"Start of week\");\n        break;\n    default:\n        System.out.println(\"Other day\");\n}"
+                }
+              ]
+            },
+            {
+              "subheading": "Loops",
+              "content": "Java supports for, while, and do-while loops for iteration.",
+              "codeSnippets": [
+                {
+                  "title": "Loop Examples",
+                  "language": "java",
+                  "code": "// For loop\nfor (int i = 0; i < 5; i++) {\n    System.out.println(i);\n}\n\n// Enhanced for loop\nint[] numbers = {1, 2, 3, 4, 5};\nfor (int num : numbers) {\n    System.out.println(num);\n}\n\n// While loop\nint count = 0;\nwhile (count < 5) {\n    System.out.println(count);\n    count++;\n}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "3. Object-Oriented Programming",
+          "subsections": [
+            {
+              "subheading": "Classes and Objects",
+              "content": "Java is fundamentally object-oriented with classes as blueprints for objects.",
+              "codeSnippets": [
+                {
+                  "title": "Class Definition",
+                  "language": "java",
+                  "code": "public class Person {\n    // Fields\n    private String name;\n    private int age;\n    \n    // Constructor\n    public Person(String name, int age) {\n        this.name = name;\n        this.age = age;\n    }\n    \n    // Methods\n    public void introduce() {\n        System.out.println(\"I'm \" + name + \", \" + age + \" years old\");\n    }\n    \n    // Getters and Setters\n    public String getName() {\n        return name;\n    }\n}"
+                }
+              ]
+            },
+            {
+              "subheading": "Inheritance and Polymorphism",
+              "content": "Java supports inheritance for code reuse and polymorphism for flexible design.",
+              "codeSnippets": [
+                {
+                  "title": "Inheritance Example",
+                  "language": "java",
+                  "code": "public class Animal {\n    protected String name;\n    \n    public void makeSound() {\n        System.out.println(\"Some sound\");\n    }\n}\n\npublic class Dog extends Animal {\n    @Override\n    public void makeSound() {\n        System.out.println(name + \" barks\");\n    }\n    \n    public void fetch() {\n        System.out.println(name + \" fetches\");\n    }\n}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "4. Interfaces and Abstract Classes",
+          "subsections": [
+            {
+              "subheading": "Interfaces",
+              "content": "Interfaces define contracts that classes must implement.",
+              "codeSnippets": [
+                {
+                  "title": "Interface Example",
+                  "language": "java",
+                  "code": "public interface Drawable {\n    void draw();\n    default void display() {\n        System.out.println(\"Displaying...\");\n    }\n}\n\npublic class Circle implements Drawable {\n    @Override\n    public void draw() {\n        System.out.println(\"Drawing circle\");\n    }\n}"
+                }
+              ]
+            },
+            {
+              "subheading": "Abstract Classes",
+              "content": "Abstract classes provide partial implementation and cannot be instantiated.",
+              "codeSnippets": [
+                {
+                  "title": "Abstract Class",
+                  "language": "java",
+                  "code": "public abstract class Shape {\n    protected String color;\n    \n    public abstract double getArea();\n    \n    public void setColor(String color) {\n        this.color = color;\n    }\n}\n\npublic class Rectangle extends Shape {\n    private double width, height;\n    \n    @Override\n    public double getArea() {\n        return width * height;\n    }\n}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "5. Collections Framework",
+          "subsections": [
+            {
+              "subheading": "Lists, Sets, and Maps",
+              "content": "Java Collections Framework provides data structures for storing and manipulating groups of objects.",
+              "codeSnippets": [
+                {
+                  "title": "Collections Examples",
+                  "language": "java",
+                  "code": "import java.util.*;\n\n// ArrayList\nList<String> fruits = new ArrayList<>();\nfruits.add(\"Apple\");\nfruits.add(\"Banana\");\n\n// HashSet\nSet<Integer> uniqueNumbers = new HashSet<>();\nuniqueNumbers.add(1);\nuniqueNumbers.add(2);\n\n// HashMap\nMap<String, Integer> ages = new HashMap<>();\nages.put(\"Alice\", 25);\nages.put(\"Bob\", 30);"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "6. Exception Handling",
+          "subsections": [
+            {
+              "subheading": "Try-Catch Blocks",
+              "content": "Java uses exceptions to handle runtime errors gracefully.",
+              "codeSnippets": [
+                {
+                  "title": "Exception Handling",
+                  "language": "java",
+                  "code": "try {\n    int result = 10 / 0;\n} catch (ArithmeticException e) {\n    System.out.println(\"Cannot divide by zero\");\n} catch (Exception e) {\n    System.out.println(\"Error: \" + e.getMessage());\n} finally {\n    System.out.println(\"Cleanup code\");\n}\n\n// Throwing exceptions\npublic void validateAge(int age) throws IllegalArgumentException {\n    if (age < 0) {\n        throw new IllegalArgumentException(\"Age cannot be negative\");\n    }\n}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "7. Multithreading",
+          "subsections": [
+            {
+              "subheading": "Creating Threads",
+              "content": "Java supports concurrent programming through threads.",
+              "codeSnippets": [
+                {
+                  "title": "Thread Examples",
+                  "language": "java",
+                  "code": "// Extending Thread class\npublic class MyThread extends Thread {\n    public void run() {\n        System.out.println(\"Thread running\");\n    }\n}\n\n// Implementing Runnable\npublic class MyRunnable implements Runnable {\n    public void run() {\n        System.out.println(\"Runnable executing\");\n    }\n}\n\n// Usage\nMyThread thread = new MyThread();\nthread.start();\n\nThread thread2 = new Thread(new MyRunnable());\nthread2.start();"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "8. File I/O",
+          "subsections": [
+            {
+              "subheading": "Reading and Writing Files",
+              "content": "Java provides multiple ways to handle file operations.",
+              "codeSnippets": [
+                {
+                  "title": "File Operations",
+                  "language": "java",
+                  "code": "import java.io.*;\nimport java.nio.file.*;\n\n// Writing to file\ntry (FileWriter writer = new FileWriter(\"data.txt\")) {\n    writer.write(\"Hello, World!\");\n} catch (IOException e) {\n    e.printStackTrace();\n}\n\n// Reading from file\ntry {\n    String content = new String(Files.readAllBytes(Paths.get(\"data.txt\")));\n    System.out.println(content);\n} catch (IOException e) {\n    e.printStackTrace();\n}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "9. Modern Java Features",
+          "subsections": [
+            {
+              "subheading": "Lambda Expressions and Streams",
+              "content": "Modern Java includes functional programming features.",
+              "codeSnippets": [
+                {
+                  "title": "Lambda and Streams",
+                  "language": "java",
+                  "code": "import java.util.stream.*;\nimport java.util.*;\n\n// Lambda expression\nList<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);\nnumbers.forEach(n -> System.out.println(n));\n\n// Streams\nList<Integer> doubled = numbers.stream()\n    .map(n -> n * 2)\n    .filter(n -> n > 5)\n    .collect(Collectors.toList());\n\n// Method reference\nnumbers.forEach(System.out::println);"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "conclusion": {
+        "text": "Java is a robust, platform-independent programming language. Mastering it means understanding OOP principles, collections, exception handling, multithreading, and modern features. While frameworks and tools evolve, Java fundamentals remain essential. A strong Java foundation ensures scalable, maintainable, and enterprise-grade application development."
+      }
+    },
+    "engagement": {
+      "views": 12334,
+      "likes": 223,
+      "shares": 12,
+      "comments": 32,
+      "bookmarks": 9
+    },
+    "comments": {
+      "enabled": true,
+      "moderated": true,
+      "count": 0
+    },
+    "newsletter": {
+      "enabled": true,
+      "ctaText": "Get weekly programming tutorials and Java deep dives delivered to your inbox."
+    }
+  },
+  {
+    "id": 106,
+    "title": "C Programming A-to-Z: The Complete Guide to C Language",
+    "slug": "c-complete-guide-a-to-z",
+    "excerpt": "Master C from basic syntax to advanced concepts including pointers, memory management, data structures, and modern best practices. A complete developer-focused guide with practical code examples.",
+    "featuredImage": {
+      "url": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YyUyMHByb2dyYW1taW5nfGVufDB8fDB8fHww",
+      "alt": "C programming code displayed on screen",
+      "width": 1200,
+      "height": 675,
+      "thumbnail": "/images/blog/c-guide-thumb.jpg"
+    },
+    "author": {
+      "id": 2,
+      "name": "Muhammad Usman",
+      "avatar": "https://images.unsplash.com/photo-1654110455429-cf322b40a906?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZSUyMHBpY3R1cmV8ZW58MHx8MHx8fDA%3D",
+      "bio": "Full-stack developer and technical writer specializing in modern web technologies and standards-based development.",
+      "title": "Web Developer & Technical Author",
+      "socialLinks": {
+        "twitter": "https://twitter.com/usmandeveloper",
+        "linkedin": "https://linkedin.com/in/usmandeveloper",
+        "instagram": "https://instagram.com/usmancode"
+      }
+    },
+    "publishedDate": "2026-02-09T10:00:00Z",
+    "updatedDate": "2026-02-09T10:00:00Z",
+    "readTime": 18,
+    "category": {
+      "id": 21,
+      "name": "Programming",
+      "slug": "programming"
+    },
+    "tags": [
+      { "id": 16, "name": "C", "slug": "c" },
+      { "id": 9, "name": "Programming", "slug": "programming" },
+      { "id": 17, "name": "Systems", "slug": "systems" },
+      { "id": 18, "name": "Low-Level", "slug": "low-level" }
+    ],
+    "content": {
+      "introduction": {
+        "text": "C is a powerful, low-level programming language that forms the foundation of modern computing. It provides direct hardware access, efficient memory management, and serves as the basis for operating systems and embedded systems. This guide covers C from A to Z — including syntax, pointers, memory management, file I/O, data structures, and best practices — strictly focused on C fundamentals and advanced programming concepts."
+      },
+      "sections": [
+        {
+          "heading": "1. C Fundamentals",
+          "subsections": [
+            {
+              "subheading": "Basic Program Structure",
+              "content": "Every C program starts with the main function and requires preprocessor directives for libraries.",
+              "codeSnippets": [
+                {
+                  "title": "Hello World Program",
+                  "language": "c",
+                  "code": "#include <stdio.h>\n\nint main() {\n    printf(\"Hello, World!\\n\");\n    return 0;\n}"
+                }
+              ]
+            },
+            {
+              "subheading": "Variables and Data Types",
+              "content": "C supports various data types including integers, floats, characters, and custom types.",
+              "codeSnippets": [
+                {
+                  "title": "Variable Declaration",
+                  "language": "c",
+                  "code": "#include <stdio.h>\n\nint main() {\n    // Basic types\n    int age = 30;\n    float salary = 50000.50;\n    char grade = 'A';\n    double pi = 3.14159265359;\n    \n    // Constants\n    const int MAX_VALUE = 100;\n    \n    printf(\"Age: %d\\n\", age);\n    printf(\"Grade: %c\\n\", grade);\n    \n    return 0;\n}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "2. Operators and Expressions",
+          "subsections": [
+            {
+              "subheading": "Arithmetic and Logical Operators",
+              "content": "C provides operators for mathematical operations, comparisons, and logical expressions.",
+              "codeSnippets": [
+                {
+                  "title": "Operator Examples",
+                  "language": "c",
+                  "code": "#include <stdio.h>\n\nint main() {\n    int a = 10, b = 5;\n    \n    // Arithmetic\n    int sum = a + b;\n    int product = a * b;\n    \n    // Comparison\n    int isEqual = (a == b);\n    \n    // Logical\n    int result = (a > 5 && b < 10);\n    \n    // Bitwise\n    int bitwiseAnd = a & b;\n    \n    return 0;\n}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "3. Control Flow",
+          "subsections": [
+            {
+              "subheading": "Conditional Statements",
+              "content": "C uses if-else and switch statements for decision making.",
+              "codeSnippets": [
+                {
+                  "title": "If-Else and Switch",
+                  "language": "c",
+                  "code": "#include <stdio.h>\n\nint main() {\n    int score = 85;\n    \n    // If-else\n    if (score >= 90) {\n        printf(\"Grade: A\\n\");\n    } else if (score >= 80) {\n        printf(\"Grade: B\\n\");\n    } else {\n        printf(\"Grade: C\\n\");\n    }\n    \n    // Switch\n    int day = 1;\n    switch(day) {\n        case 1:\n            printf(\"Monday\\n\");\n            break;\n        case 2:\n            printf(\"Tuesday\\n\");\n            break;\n        default:\n            printf(\"Other day\\n\");\n    }\n    \n    return 0;\n}"
+                }
+              ]
+            },
+            {
+              "subheading": "Loops",
+              "content": "C supports for, while, and do-while loops for iteration.",
+              "codeSnippets": [
+                {
+                  "title": "Loop Examples",
+                  "language": "c",
+                  "code": "#include <stdio.h>\n\nint main() {\n    // For loop\n    for (int i = 0; i < 5; i++) {\n        printf(\"%d \", i);\n    }\n    printf(\"\\n\");\n    \n    // While loop\n    int count = 0;\n    while (count < 5) {\n        printf(\"%d \", count);\n        count++;\n    }\n    printf(\"\\n\");\n    \n    // Do-while loop\n    int j = 0;\n    do {\n        printf(\"%d \", j);\n        j++;\n    } while (j < 5);\n    \n    return 0;\n}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "4. Functions",
+          "subsections": [
+            {
+              "subheading": "Function Declaration and Definition",
+              "content": "Functions enable code reusability and modular programming in C.",
+              "codeSnippets": [
+                {
+                  "title": "Function Examples",
+                  "language": "c",
+                  "code": "#include <stdio.h>\n\n// Function declaration\nint add(int a, int b);\nvoid greet(char name[]);\n\nint main() {\n    int sum = add(5, 3);\n    printf(\"Sum: %d\\n\", sum);\n    \n    greet(\"Alice\");\n    \n    return 0;\n}\n\n// Function definition\nint add(int a, int b) {\n    return a + b;\n}\n\nvoid greet(char name[]) {\n    printf(\"Hello, %s!\\n\", name);\n}"
+                }
+              ]
+            },
+            {
+              "subheading": "Recursion",
+              "content": "Functions can call themselves to solve problems recursively.",
+              "codeSnippets": [
+                {
+                  "title": "Recursive Function",
+                  "language": "c",
+                  "code": "#include <stdio.h>\n\nint factorial(int n) {\n    if (n <= 1) {\n        return 1;\n    }\n    return n * factorial(n - 1);\n}\n\nint main() {\n    int result = factorial(5);\n    printf(\"Factorial: %d\\n\", result);\n    return 0;\n}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "5. Pointers",
+          "subsections": [
+            {
+              "subheading": "Pointer Basics",
+              "content": "Pointers store memory addresses and enable direct memory manipulation.",
+              "codeSnippets": [
+                {
+                  "title": "Pointer Examples",
+                  "language": "c",
+                  "code": "#include <stdio.h>\n\nint main() {\n    int num = 10;\n    int *ptr = &num;  // Pointer to num\n    \n    printf(\"Value: %d\\n\", num);\n    printf(\"Address: %p\\n\", (void*)&num);\n    printf(\"Pointer value: %d\\n\", *ptr);\n    \n    // Modify through pointer\n    *ptr = 20;\n    printf(\"New value: %d\\n\", num);\n    \n    return 0;\n}"
+                }
+              ]
+            },
+            {
+              "subheading": "Pointer Arithmetic",
+              "content": "Pointers can be incremented and decremented to traverse memory.",
+              "codeSnippets": [
+                {
+                  "title": "Pointer Arithmetic",
+                  "language": "c",
+                  "code": "#include <stdio.h>\n\nint main() {\n    int arr[] = {10, 20, 30, 40, 50};\n    int *ptr = arr;\n    \n    for (int i = 0; i < 5; i++) {\n        printf(\"%d \", *(ptr + i));\n    }\n    printf(\"\\n\");\n    \n    return 0;\n}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "6. Arrays and Strings",
+          "subsections": [
+            {
+              "subheading": "Arrays",
+              "content": "Arrays store collections of elements of the same type.",
+              "codeSnippets": [
+                {
+                  "title": "Array Examples",
+                  "language": "c",
+                  "code": "#include <stdio.h>\n\nint main() {\n    int numbers[5] = {1, 2, 3, 4, 5};\n    \n    // Access elements\n    printf(\"First: %d\\n\", numbers[0]);\n    \n    // Modify elements\n    numbers[2] = 10;\n    \n    // Multi-dimensional array\n    int matrix[2][3] = {{1, 2, 3}, {4, 5, 6}};\n    \n    return 0;\n}"
+                }
+              ]
+            },
+            {
+              "subheading": "Strings",
+              "content": "Strings in C are arrays of characters terminated by null character.",
+              "codeSnippets": [
+                {
+                  "title": "String Operations",
+                  "language": "c",
+                  "code": "#include <stdio.h>\n#include <string.h>\n\nint main() {\n    char name[50] = \"Alice\";\n    char greeting[100];\n    \n    // String functions\n    strcpy(greeting, \"Hello, \");\n    strcat(greeting, name);\n    printf(\"%s\\n\", greeting);\n    \n    int len = strlen(name);\n    printf(\"Length: %d\\n\", len);\n    \n    return 0;\n}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "7. Structures and Unions",
+          "subsections": [
+            {
+              "subheading": "Structures",
+              "content": "Structures group different data types under a single name.",
+              "codeSnippets": [
+                {
+                  "title": "Structure Example",
+                  "language": "c",
+                  "code": "#include <stdio.h>\n#include <string.h>\n\nstruct Person {\n    char name[50];\n    int age;\n    float salary;\n};\n\nint main() {\n    struct Person person1;\n    \n    strcpy(person1.name, \"John\");\n    person1.age = 30;\n    person1.salary = 50000.50;\n    \n    printf(\"Name: %s\\n\", person1.name);\n    printf(\"Age: %d\\n\", person1.age);\n    printf(\"Salary: %.2f\\n\", person1.salary);\n    \n    return 0;\n}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "8. Dynamic Memory Allocation",
+          "subsections": [
+            {
+              "subheading": "malloc, calloc, and free",
+              "content": "Dynamic memory allocation allows runtime memory management.",
+              "codeSnippets": [
+                {
+                  "title": "Memory Allocation",
+                  "language": "c",
+                  "code": "#include <stdio.h>\n#include <stdlib.h>\n\nint main() {\n    // Allocate memory\n    int *arr = (int*)malloc(5 * sizeof(int));\n    \n    if (arr == NULL) {\n        printf(\"Memory allocation failed\\n\");\n        return 1;\n    }\n    \n    // Use allocated memory\n    for (int i = 0; i < 5; i++) {\n        arr[i] = i * 10;\n        printf(\"%d \", arr[i]);\n    }\n    \n    // Free memory\n    free(arr);\n    \n    return 0;\n}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "9. File I/O",
+          "subsections": [
+            {
+              "subheading": "Reading and Writing Files",
+              "content": "C provides functions to read from and write to files.",
+              "codeSnippets": [
+                {
+                  "title": "File Operations",
+                  "language": "c",
+                  "code": "#include <stdio.h>\n\nint main() {\n    FILE *file;\n    \n    // Writing to file\n    file = fopen(\"data.txt\", \"w\");\n    if (file != NULL) {\n        fprintf(file, \"Hello, World!\\n\");\n        fclose(file);\n    }\n    \n    // Reading from file\n    file = fopen(\"data.txt\", \"r\");\n    if (file != NULL) {\n        char buffer[100];\n        while (fgets(buffer, 100, file) != NULL) {\n            printf(\"%s\", buffer);\n        }\n        fclose(file);\n    }\n    \n    return 0;\n}"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "conclusion": {
+        "text": "C is a foundational programming language that provides low-level control and high performance. Mastering it means understanding pointers, memory management, data structures, and system-level programming. While higher-level languages exist, C fundamentals remain crucial for systems programming, embedded systems, and understanding computer architecture. A strong C foundation enables efficient and powerful software development."
+      }
+    },
+    "engagement": {
+      "views": 12334,
+      "likes": 223,
+      "shares": 12,
+      "comments": 32,
+      "bookmarks": 9
+    },
+    "comments": {
+      "enabled": true,
+      "moderated": true,
+      "count": 0
+    },
+    "newsletter": {
+      "enabled": true,
+      "ctaText": "Get weekly programming tutorials and C language deep dives delivered to your inbox."
+    }
+  },
+  {
+    "id": 107,
+    "title": "PHP A-to-Z: The Complete Guide to PHP Programming",
+    "slug": "php-complete-guide-a-to-z",
+    "excerpt": "Master PHP from basic syntax to advanced concepts including OOP, databases, security, and modern best practices. A complete developer-focused guide with practical code examples.",
+    "featuredImage": {
+      "url": "https://images.unsplash.com/photo-1599507593499-a3f7d7d97667?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGhwfGVufDB8fDB8fHww",
+      "alt": "PHP code displayed on screen",
+      "width": 1200,
+      "height": 675,
+      "thumbnail": "/images/blog/php-guide-thumb.jpg"
+    },
+    "author": {
+      "id": 2,
+      "name": "Muhammad Usman",
+      "avatar": "https://images.unsplash.com/photo-1654110455429-cf322b40a906?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZSUyMHBpY3R1cmV8ZW58MHx8MHx8fDA%3D",
+      "bio": "Full-stack developer and technical writer specializing in modern web technologies and standards-based development.",
+      "title": "Web Developer & Technical Author",
+      "socialLinks": {
+        "twitter": "https://twitter.com/usmandeveloper",
+        "linkedin": "https://linkedin.com/in/usmandeveloper",
+        "instagram": "https://instagram.com/usmancode"
+      }
+    },
+    "publishedDate": "2026-02-09T10:00:00Z",
+    "updatedDate": "2026-02-09T10:00:00Z",
+    "readTime": 18,
+    "category": {
+      "id": 20,
+      "name": "Web Development",
+      "slug": "web-development"
+    },
+    "tags": [
+      { "id": 19, "name": "PHP", "slug": "php" },
+      { "id": 12, "name": "Backend", "slug": "backend" },
+      { "id": 9, "name": "Programming", "slug": "programming" },
+      { "id": 20, "name": "Server-Side", "slug": "server-side" }
+    ],
+    "content": {
+      "introduction": {
+        "text": "PHP (Hypertext Preprocessor) is a server-side scripting language widely used for web development. It powers major platforms like WordPress, Facebook, and Wikipedia. This guide covers PHP from A to Z — including syntax, variables, functions, OOP, database interaction, security, and modern best practices — strictly focused on PHP fundamentals and advanced server-side programming concepts."
+      },
+      "sections": [
+        {
+          "heading": "1. PHP Fundamentals",
+          "subsections": [
+            {
+              "subheading": "Basic Syntax",
+              "content": "PHP code is executed on the server and embedded within HTML using special tags.",
+              "codeSnippets": [
+                {
+                  "title": "Hello World in PHP",
+                  "language": "php",
+                  "code": "<?php\n// Single line comment\n\n/* Multi-line\n   comment */\n\necho \"Hello, World!\";\nprint \"PHP is awesome!\";\n\n// Variables\n$name = \"Alice\";\n$age = 25;\n\necho \"My name is $name and I am $age years old.\";\n?>"
+                }
+              ]
+            },
+            {
+              "subheading": "Variables and Data Types",
+              "content": "PHP is loosely typed and supports various data types.",
+              "codeSnippets": [
+                {
+                  "title": "Data Types",
+                  "language": "php",
+                  "code": "<?php\n// String\n$name = \"John\";\n\n// Integer\n$age = 30;\n\n// Float\n$price = 99.99;\n\n// Boolean\n$isActive = true;\n\n// Array\n$colors = array(\"red\", \"green\", \"blue\");\n\n// Null\n$value = null;\n\n// Check type\nvar_dump($age);\n?>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "2. Operators and Control Flow",
+          "subsections": [
+            {
+              "subheading": "Operators",
+              "content": "PHP supports arithmetic, comparison, logical, and assignment operators.",
+              "codeSnippets": [
+                {
+                  "title": "PHP Operators",
+                  "language": "php",
+                  "code": "<?php\n// Arithmetic\n$sum = 10 + 5;\n$product = 10 * 5;\n\n// Comparison\n$isEqual = (10 == 10);\n$isIdentical = (10 === \"10\");  // false\n\n// Logical\n$result = (true && false);\n\n// String concatenation\n$fullName = \"John\" . \" \" . \"Doe\";\n\n// Ternary\n$status = ($age >= 18) ? \"Adult\" : \"Minor\";\n?>"
+                }
+              ]
+            },
+            {
+              "subheading": "Conditional Statements",
+              "content": "PHP uses if-else and switch for decision making.",
+              "codeSnippets": [
+                {
+                  "title": "Control Structures",
+                  "language": "php",
+                  "code": "<?php\n$score = 85;\n\n// If-else\nif ($score >= 90) {\n    echo \"Grade: A\";\n} elseif ($score >= 80) {\n    echo \"Grade: B\";\n} else {\n    echo \"Grade: C\";\n}\n\n// Switch\n$day = \"Monday\";\nswitch ($day) {\n    case \"Monday\":\n        echo \"Start of week\";\n        break;\n    case \"Friday\":\n        echo \"End of week\";\n        break;\n    default:\n        echo \"Midweek\";\n}\n?>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "3. Loops",
+          "subsections": [
+            {
+              "subheading": "Loop Types",
+              "content": "PHP supports for, while, do-while, and foreach loops.",
+              "codeSnippets": [
+                {
+                  "title": "Loop Examples",
+                  "language": "php",
+                  "code": "<?php\n// For loop\nfor ($i = 0; $i < 5; $i++) {\n    echo $i . \" \";\n}\n\n// While loop\n$count = 0;\nwhile ($count < 5) {\n    echo $count . \" \";\n    $count++;\n}\n\n// Foreach loop\n$colors = array(\"red\", \"green\", \"blue\");\nforeach ($colors as $color) {\n    echo $color . \" \";\n}\n\n// Foreach with key-value\n$person = array(\"name\" => \"John\", \"age\" => 30);\nforeach ($person as $key => $value) {\n    echo \"$key: $value\\n\";\n}\n?>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "4. Functions",
+          "subsections": [
+            {
+              "subheading": "Defining Functions",
+              "content": "Functions encapsulate reusable code blocks in PHP.",
+              "codeSnippets": [
+                {
+                  "title": "Function Examples",
+                  "language": "php",
+                  "code": "<?php\n// Basic function\nfunction greet($name) {\n    return \"Hello, $name!\";\n}\n\necho greet(\"Alice\");\n\n// Default parameters\nfunction power($base, $exp = 2) {\n    return pow($base, $exp);\n}\n\necho power(3);  // 9\necho power(3, 3);  // 27\n\n// Variable scope\n$global_var = \"I'm global\";\n\nfunction testScope() {\n    global $global_var;\n    echo $global_var;\n}\n?>"
+                }
+              ]
+            },
+            {
+              "subheading": "Anonymous Functions",
+              "content": "PHP supports anonymous functions (closures) for flexible programming.",
+              "codeSnippets": [
+                {
+                  "title": "Anonymous Functions",
+                  "language": "php",
+                  "code": "<?php\n// Anonymous function\n$multiply = function($a, $b) {\n    return $a * $b;\n};\n\necho $multiply(5, 3);\n\n// Using with array_map\n$numbers = [1, 2, 3, 4, 5];\n$squared = array_map(function($n) {\n    return $n * $n;\n}, $numbers);\n\nprint_r($squared);\n?>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "5. Arrays",
+          "subsections": [
+            {
+              "subheading": "Array Operations",
+              "content": "PHP provides powerful array manipulation functions.",
+              "codeSnippets": [
+                {
+                  "title": "Working with Arrays",
+                  "language": "php",
+                  "code": "<?php\n// Indexed array\n$fruits = array(\"apple\", \"banana\", \"orange\");\n$fruits[] = \"grape\";  // Add element\n\n// Associative array\n$person = array(\n    \"name\" => \"John\",\n    \"age\" => 30,\n    \"city\" => \"NYC\"\n);\n\n// Array functions\narray_push($fruits, \"mango\");\narray_pop($fruits);\n$count = count($fruits);\n$exists = in_array(\"apple\", $fruits);\n\n// Multidimensional array\n$matrix = array(\n    array(1, 2, 3),\n    array(4, 5, 6)\n);\n?>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "6. Object-Oriented PHP",
+          "subsections": [
+            {
+              "subheading": "Classes and Objects",
+              "content": "PHP supports OOP with classes, inheritance, and encapsulation.",
+              "codeSnippets": [
+                {
+                  "title": "Class Definition",
+                  "language": "php",
+                  "code": "<?php\nclass Person {\n    // Properties\n    private $name;\n    private $age;\n    \n    // Constructor\n    public function __construct($name, $age) {\n        $this->name = $name;\n        $this->age = $age;\n    }\n    \n    // Methods\n    public function introduce() {\n        return \"I'm {$this->name}, {$this->age} years old.\";\n    }\n    \n    // Getter\n    public function getName() {\n        return $this->name;\n    }\n}\n\n// Create object\n$person = new Person(\"Alice\", 25);\necho $person->introduce();\n?>"
+                }
+              ]
+            },
+            {
+              "subheading": "Inheritance and Interfaces",
+              "content": "PHP supports inheritance and interfaces for flexible design.",
+              "codeSnippets": [
+                {
+                  "title": "Inheritance Example",
+                  "language": "php",
+                  "code": "<?php\nclass Animal {\n    protected $name;\n    \n    public function __construct($name) {\n        $this->name = $name;\n    }\n    \n    public function makeSound() {\n        return \"Some sound\";\n    }\n}\n\nclass Dog extends Animal {\n    public function makeSound() {\n        return \"{$this->name} barks!\";\n    }\n}\n\n// Interface\ninterface Drawable {\n    public function draw();\n}\n\nclass Circle implements Drawable {\n    public function draw() {\n        return \"Drawing circle\";\n    }\n}\n?>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "7. Database Interaction",
+          "subsections": [
+            {
+              "subheading": "MySQLi and PDO",
+              "content": "PHP interacts with databases using MySQLi or PDO.",
+              "codeSnippets": [
+                {
+                  "title": "Database Connection (PDO)",
+                  "language": "php",
+                  "code": "<?php\ntry {\n    // Connect to database\n    $pdo = new PDO(\n        'mysql:host=localhost;dbname=mydb',\n        'username',\n        'password'\n    );\n    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);\n    \n    // Prepared statement (prevents SQL injection)\n    $stmt = $pdo->prepare(\"SELECT * FROM users WHERE email = :email\");\n    $stmt->execute(['email' => $email]);\n    $user = $stmt->fetch(PDO::FETCH_ASSOC);\n    \n    // Insert data\n    $stmt = $pdo->prepare(\"INSERT INTO users (name, email) VALUES (:name, :email)\");\n    $stmt->execute([\n        'name' => 'John',\n        'email' => 'john@example.com'\n    ]);\n    \n} catch(PDOException $e) {\n    echo \"Error: \" . $e->getMessage();\n}\n?>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "8. Form Handling and Security",
+          "subsections": [
+            {
+              "subheading": "Processing Forms Securely",
+              "content": "PHP handles form data with built-in security considerations.",
+              "codeSnippets": [
+                {
+                  "title": "Secure Form Handling",
+                  "language": "php",
+                  "code": "<?php\n// Check request method\nif ($_SERVER['REQUEST_METHOD'] == 'POST') {\n    // Sanitize input\n    $name = htmlspecialchars($_POST['name']);\n    $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);\n    \n    // Validate email\n    if (filter_var($email, FILTER_VALIDATE_EMAIL)) {\n        echo \"Valid email: $email\";\n    } else {\n        echo \"Invalid email\";\n    }\n    \n    // Prevent XSS\n    $comment = htmlspecialchars($_POST['comment'], ENT_QUOTES, 'UTF-8');\n    \n    // CSRF protection (use token)\n    if ($_POST['csrf_token'] === $_SESSION['csrf_token']) {\n        // Process form\n    }\n}\n?>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "9. Sessions and Cookies",
+          "subsections": [
+            {
+              "subheading": "State Management",
+              "content": "PHP uses sessions and cookies to maintain state across requests.",
+              "codeSnippets": [
+                {
+                  "title": "Sessions and Cookies",
+                  "language": "php",
+                  "code": "<?php\n// Start session\nsession_start();\n\n// Set session variable\n$_SESSION['username'] = 'john_doe';\n$_SESSION['user_id'] = 123;\n\n// Access session\nif (isset($_SESSION['username'])) {\n    echo \"Welcome, \" . $_SESSION['username'];\n}\n\n// Destroy session\nsession_destroy();\n\n// Set cookie\nsetcookie('user', 'john', time() + 3600, '/');\n\n// Access cookie\nif (isset($_COOKIE['user'])) {\n    echo \"User: \" . $_COOKIE['user'];\n}\n?>"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "conclusion": {
+        "text": "PHP is a versatile server-side scripting language powering millions of websites. Mastering it means understanding syntax, OOP, database interaction, security practices, and modern development patterns. While frameworks like Laravel and Symfony exist, PHP fundamentals remain essential. A strong PHP foundation enables building secure, scalable, and dynamic web applications."
+      }
+    },
+    "engagement": {
+      "views": 12334,
+      "likes": 223,
+      "shares": 12,
+      "comments": 32,
+      "bookmarks": 9
+    },
+    "comments": {
+      "enabled": true,
+      "moderated": true,
+      "count": 0
+    },
+    "newsletter": {
+      "enabled": true,
+      "ctaText": "Get weekly web development tutorials and PHP deep dives delivered to your inbox."
+    }
+  },
+  {
+  "id": 108,
+  "title": "TypeScript A-to-Z: The Complete Guide to TypeScript",
+  "slug": "typescript-complete-guide-a-to-z",
+  "excerpt": "Master TypeScript from basic syntax to advanced concepts including types, interfaces, generics, and modern best practices. A complete developer-focused guide with practical code examples.",
+  "featuredImage": {
+    "url": "https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dHlwZXNjcmlwdHxlbnwwfHwwfHx8MA%3D%3D",
+    "alt": "TypeScript code displayed on screen",
+    "width": 1200,
+    "height": 675,
+    "thumbnail": "/images/blog/typescript-guide-thumb.jpg"
+  },
+  "author": {
+    "id": 2,
+    "name": "Muhammad Usman",
+    "avatar": "https://images.unsplash.com/photo-1654110455429-cf322b40a906?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZSUyMHBpY3R1cmV8ZW58MHx8MHx8fDA%3D",
+    "bio": "Full-stack developer and technical writer specializing in modern web technologies and standards-based development.",
+    "title": "Web Developer & Technical Author",
+    "socialLinks": {
+      "twitter": "https://twitter.com/usmandeveloper",
+      "linkedin": "https://linkedin.com/in/usmandeveloper",
+      "instagram": "https://instagram.com/usmancode"
+    }
+  },
+  "publishedDate": "2026-02-09T10:00:00Z",
+  "updatedDate": "2026-02-09T10:00:00Z",
+  "readTime": 18,
+  "category": {
+    "id": 20,
+    "name": "Web Development",
+    "slug": "web-development"
+  },
+  "tags": [
+    { "id": 21, "name": "TypeScript", "slug": "typescript" },
+    { "id": 8, "name": "JavaScript", "slug": "javascript" },
+    { "id": 2, "name": "Frontend", "slug": "frontend" },
+    { "id": 9, "name": "Programming", "slug": "programming" }
+  ],
+  "content": {
+    "introduction": {
+      "text": "TypeScript is a strongly-typed superset of JavaScript that compiles to plain JavaScript. It adds static type checking, interfaces, and modern features to enhance code quality and developer experience. This guide covers TypeScript from A to Z — including types, interfaces, generics, decorators, and modern best practices — strictly focused on TypeScript fundamentals and advanced type system concepts."
+    },
+    "sections": [
+      {
+        "heading": "1. TypeScript Fundamentals",
+        "subsections": [
+          {
+            "subheading": "Basic Types",
+            "content": "TypeScript provides static type checking with built-in primitive and complex types.",
+            "codeSnippets": [
+              {
+                "title": "Basic Type Annotations",
+                "language": "typescript",
+                "code": "// Primitive types\nlet name: string = \"Alice\";\nlet age: number = 30;\nlet isActive: boolean = true;\nlet value: null = null;\nlet notDefined: undefined = undefined;\n\n// Arrays\nlet numbers: number[] = [1, 2, 3];\nlet names: Array<string> = [\"Alice\", \"Bob\"];\n\n// Tuple\nlet person: [string, number] = [\"Alice\", 30];\n\n// Any (avoid when possible)\nlet anything: any = \"can be anything\";\n\n// Unknown (safer alternative to any)\nlet uncertain: unknown = 4;\n\n// Void (for functions with no return)\nfunction log(message: string): void {\n  console.log(message);\n}"
+              }
+            ]
+          },
+          {
+            "subheading": "Type Inference",
+            "content": "TypeScript can automatically infer types based on initial values.",
+            "codeSnippets": [
+              {
+                "title": "Type Inference",
+                "language": "typescript",
+                "code": "// TypeScript infers the type\nlet message = \"Hello\";  // inferred as string\nlet count = 42;  // inferred as number\n\n// Function return type inference\nfunction add(a: number, b: number) {\n  return a + b;  // inferred return type: number\n}\n\n// Context-based inference\nconst numbers = [1, 2, 3];  // inferred as number[]\nnumbers.forEach(n => {\n  console.log(n.toFixed(2));  // n is inferred as number\n});"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "2. Interfaces and Type Aliases",
+        "subsections": [
+          {
+            "subheading": "Interfaces",
+            "content": "Interfaces define contracts for object shapes and can be extended.",
+            "codeSnippets": [
+              {
+                "title": "Interface Examples",
+                "language": "typescript",
+                "code": "// Basic interface\ninterface User {\n  id: number;\n  name: string;\n  email: string;\n  age?: number;  // optional property\n  readonly createdAt: Date;  // readonly property\n}\n\nconst user: User = {\n  id: 1,\n  name: \"Alice\",\n  email: \"alice@example.com\",\n  createdAt: new Date()\n};\n\n// Interface for functions\ninterface MathOperation {\n  (a: number, b: number): number;\n}\n\nconst add: MathOperation = (x, y) => x + y;\n\n// Extending interfaces\ninterface Employee extends User {\n  department: string;\n  salary: number;\n}"
+              }
+            ]
+          },
+          {
+            "subheading": "Type Aliases",
+            "content": "Type aliases create custom type names for any type combination.",
+            "codeSnippets": [
+              {
+                "title": "Type Alias Examples",
+                "language": "typescript",
+                "code": "// Basic type alias\ntype ID = string | number;\n\n// Object type alias\ntype Point = {\n  x: number;\n  y: number;\n};\n\n// Union types\ntype Status = \"pending\" | \"approved\" | \"rejected\";\n\n// Intersection types\ntype Employee = Person & {\n  employeeId: number;\n  department: string;\n};\n\n// Function type alias\ntype Callback = (data: string) => void;"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "3. Functions",
+        "subsections": [
+          {
+            "subheading": "Function Types",
+            "content": "TypeScript provides strong typing for function parameters and return values.",
+            "codeSnippets": [
+              {
+                "title": "Typed Functions",
+                "language": "typescript",
+                "code": "// Basic function\nfunction greet(name: string): string {\n  return `Hello, ${name}!`;\n}\n\n// Optional parameters\nfunction buildName(first: string, last?: string): string {\n  return last ? `${first} ${last}` : first;\n}\n\n// Default parameters\nfunction power(base: number, exp: number = 2): number {\n  return Math.pow(base, exp);\n}\n\n// Rest parameters\nfunction sum(...numbers: number[]): number {\n  return numbers.reduce((a, b) => a + b, 0);\n}\n\n// Arrow functions\nconst multiply = (a: number, b: number): number => a * b;\n\n// Function overloading\nfunction process(x: string): string;\nfunction process(x: number): number;\nfunction process(x: any): any {\n  return x;\n}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "4. Classes",
+        "subsections": [
+          {
+            "subheading": "Class Syntax",
+            "content": "TypeScript enhances JavaScript classes with access modifiers and type safety.",
+            "codeSnippets": [
+              {
+                "title": "Class Example",
+                "language": "typescript",
+                "code": "class Person {\n  // Properties\n  private name: string;\n  protected age: number;\n  public email: string;\n  readonly id: number;\n  \n  // Constructor\n  constructor(name: string, age: number, email: string) {\n    this.name = name;\n    this.age = age;\n    this.email = email;\n    this.id = Math.random();\n  }\n  \n  // Methods\n  public introduce(): string {\n    return `I'm ${this.name}, ${this.age} years old`;\n  }\n  \n  // Getters and setters\n  get userName(): string {\n    return this.name;\n  }\n  \n  set userName(value: string) {\n    this.name = value;\n  }\n  \n  // Static members\n  static species: string = \"Homo sapiens\";\n  \n  static isAdult(age: number): boolean {\n    return age >= 18;\n  }\n}"
+              }
+            ]
+          },
+          {
+            "subheading": "Inheritance and Abstract Classes",
+            "content": "TypeScript supports class inheritance and abstract classes for polymorphism.",
+            "codeSnippets": [
+              {
+                "title": "Inheritance",
+                "language": "typescript",
+                "code": "// Abstract class\nabstract class Animal {\n  constructor(protected name: string) {}\n  \n  abstract makeSound(): void;\n  \n  move(): void {\n    console.log(`${this.name} is moving`);\n  }\n}\n\n// Inheritance\nclass Dog extends Animal {\n  constructor(name: string, private breed: string) {\n    super(name);\n  }\n  \n  makeSound(): void {\n    console.log(`${this.name} barks`);\n  }\n  \n  getBreed(): string {\n    return this.breed;\n  }\n}\n\nconst dog = new Dog(\"Buddy\", \"Golden Retriever\");\ndog.makeSound();\ndog.move();"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "5. Generics",
+        "subsections": [
+          {
+            "subheading": "Generic Functions and Classes",
+            "content": "Generics enable writing reusable, type-safe code that works with multiple types.",
+            "codeSnippets": [
+              {
+                "title": "Generic Examples",
+                "language": "typescript",
+                "code": "// Generic function\nfunction identity<T>(arg: T): T {\n  return arg;\n}\n\nlet output1 = identity<string>(\"hello\");\nlet output2 = identity<number>(42);\n\n// Generic interface\ninterface Box<T> {\n  value: T;\n}\n\nconst stringBox: Box<string> = { value: \"hello\" };\nconst numberBox: Box<number> = { value: 42 };\n\n// Generic class\nclass GenericStorage<T> {\n  private items: T[] = [];\n  \n  add(item: T): void {\n    this.items.push(item);\n  }\n  \n  get(index: number): T {\n    return this.items[index];\n  }\n}\n\nconst numberStorage = new GenericStorage<number>();\nnumberStorage.add(1);\n\n// Generic constraints\ninterface Lengthwise {\n  length: number;\n}\n\nfunction logLength<T extends Lengthwise>(arg: T): T {\n  console.log(arg.length);\n  return arg;\n}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "6. Advanced Types",
+        "subsections": [
+          {
+            "subheading": "Union and Intersection Types",
+            "content": "Combine types using union (|) and intersection (&) operators.",
+            "codeSnippets": [
+              {
+                "title": "Advanced Type Operations",
+                "language": "typescript",
+                "code": "// Union types\ntype Result = string | number;\nlet result: Result = \"success\";\nresult = 200;\n\n// Type guards\nfunction processValue(value: string | number) {\n  if (typeof value === \"string\") {\n    return value.toUpperCase();\n  } else {\n    return value.toFixed(2);\n  }\n}\n\n// Intersection types\ntype Person = { name: string };\ntype Employee = { employeeId: number };\ntype Staff = Person & Employee;\n\nconst staff: Staff = {\n  name: \"Alice\",\n  employeeId: 123\n};\n\n// Literal types\ntype Direction = \"north\" | \"south\" | \"east\" | \"west\";\nlet heading: Direction = \"north\";\n\n// Type assertions\nlet someValue: unknown = \"this is a string\";\nlet strLength: number = (someValue as string).length;"
+              }
+            ]
+          },
+          {
+            "subheading": "Utility Types",
+            "content": "TypeScript provides built-in utility types for type transformations.",
+            "codeSnippets": [
+              {
+                "title": "Utility Types",
+                "language": "typescript",
+                "code": "interface User {\n  id: number;\n  name: string;\n  email: string;\n  age: number;\n}\n\n// Partial - makes all properties optional\ntype PartialUser = Partial<User>;\n\n// Required - makes all properties required\ntype RequiredUser = Required<User>;\n\n// Pick - selects specific properties\ntype UserPreview = Pick<User, \"id\" | \"name\">;\n\n// Omit - excludes specific properties\ntype UserWithoutEmail = Omit<User, \"email\">;\n\n// Record - creates object type with specific keys\ntype UserRoles = Record<string, string>;\n\n// Readonly - makes all properties readonly\ntype ReadonlyUser = Readonly<User>;\n\n// ReturnType - extracts function return type\nfunction getUser() {\n  return { id: 1, name: \"Alice\" };\n}\ntype UserReturn = ReturnType<typeof getUser>;"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "7. Modules",
+        "subsections": [
+          {
+            "subheading": "Import and Export",
+            "content": "TypeScript uses ES6 module syntax with enhanced type support.",
+            "codeSnippets": [
+              {
+                "title": "Module System",
+                "language": "typescript",
+                "code": "// math.ts - Named exports\nexport const PI = 3.14159;\n\nexport function square(x: number): number {\n  return x * x;\n}\n\nexport class Calculator {\n  add(a: number, b: number): number {\n    return a + b;\n  }\n}\n\n// app.ts - Import\nimport { PI, square, Calculator } from './math';\nimport * as math from './math';\n\n// Default export\n// user.ts\nexport default class User {\n  constructor(public name: string) {}\n}\n\n// Import default\nimport User from './user';\n\n// Type-only imports\nimport type { User } from './types';"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "8. Decorators",
+        "subsections": [
+          {
+            "subheading": "Class and Method Decorators",
+            "content": "Decorators add metadata and modify class behavior (experimental feature).",
+            "codeSnippets": [
+              {
+                "title": "Decorator Examples",
+                "language": "typescript",
+                "code": "// Class decorator\nfunction sealed(constructor: Function) {\n  Object.seal(constructor);\n  Object.seal(constructor.prototype);\n}\n\n@sealed\nclass Greeter {\n  greeting: string;\n  constructor(message: string) {\n    this.greeting = message;\n  }\n}\n\n// Method decorator\nfunction log(target: any, propertyKey: string, descriptor: PropertyDescriptor) {\n  const original = descriptor.value;\n  descriptor.value = function(...args: any[]) {\n    console.log(`Calling ${propertyKey} with`, args);\n    return original.apply(this, args);\n  };\n}\n\nclass Calculator {\n  @log\n  add(a: number, b: number): number {\n    return a + b;\n  }\n}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "heading": "9. TypeScript Configuration",
+        "subsections": [
+          {
+            "subheading": "tsconfig.json",
+            "content": "Configure TypeScript compiler options for your project.",
+            "codeSnippets": [
+              {
+                "title": "TypeScript Configuration",
+                "language": "json",
+                "code": "{\n  \"compilerOptions\": {\n    \"target\": \"ES2020\",\n    \"module\": \"commonjs\",\n    \"lib\": [\"ES2020\"],\n    \"outDir\": \"./dist\",\n    \"rootDir\": \"./src\",\n    \"strict\": true,\n    \"esModuleInterop\": true,\n    \"skipLibCheck\": true,\n    \"forceConsistentCasingInFileNames\": true,\n    \"resolveJsonModule\": true,\n    \"declaration\": true,\n    \"declarationMap\": true,\n    \"sourceMap\": true,\n    \"noUnusedLocals\": true,\n    \"noUnusedParameters\": true,\n    \"noImplicitReturns\": true\n  },\n  \"include\": [\"src/**/*\"],\n  \"exclude\": [\"node_modules\", \"dist\"]\n}"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "conclusion": {
+      "text": "TypeScript is a powerful enhancement to JavaScript that brings type safety and modern features to web development. Mastering it means understanding types, interfaces, generics, classes, and advanced type system concepts. While JavaScript remains the runtime language, TypeScript's compile-time checks prevent bugs and improve code quality. A strong TypeScript foundation enables building scalable, maintainable, and robust applications."
+    }
+  },
+  "engagement": {
+    "views": 12334,
+    "likes": 223,
+    "shares": 12,
+    "comments": 32,
+    "bookmarks": 9
+  },
+  "comments": {
+    "enabled": true,
+    "moderated": true,
+    "count": 0
+  },
+  "newsletter": {
+    "enabled": true,
+    "ctaText": "Get weekly web development tutorials and TypeScript deep dives delivered to your inbox."
+  }
+  }
+  ]

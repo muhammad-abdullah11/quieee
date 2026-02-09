@@ -185,12 +185,12 @@ export default function Footer() {
         <h2 className="font-bold text-3xl font-mono mb-2 ">Countries</h2>
         <div className="flex flex-wrap justify-center gap-4">
           {countries.map((country, index) => (
-            <h4
+            <span
               key={index}
-              className="px-4 py-1 text-sm bg-gradient-to-b from-zinc-300 to-zinc-500 hover:text-blue-600 hover:font-medium rounded-lg"
+              className="px-5 py-2 text-sm font-medium text-white bg-gradient-to-b from-zinc-500 to-zinc-700 rounded-lg shadow-sm hover:from-zinc-600 hover:to-zinc-800 hover:shadow-md active:scale-95 transition-all duration-200"
             >
               {country}
-            </h4>
+            </span>
           ))}
         </div>
 
