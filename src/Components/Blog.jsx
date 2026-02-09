@@ -132,10 +132,10 @@ const Blog = () => {
 
         <div className="bg-white rounded-2xl shadow-sm p-6 space-y-3 text-sm">
           <p>
-            <span className="font-medium">Published:</span> {blog.publishedDate}
+            <span className="font-medium">Published:</span> {blog.publishedDate.slice(0, 10)}
           </p>
           <p>
-            <span className="font-medium">Updated:</span> {blog.updatedDate}
+            <span className="font-medium">Updated:</span> {blog.updatedDate.slice(0, 10)}
           </p>
           <p>
             <span className="font-medium">Read Time:</span> {blog.readTime}
