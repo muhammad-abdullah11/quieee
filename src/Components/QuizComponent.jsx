@@ -164,8 +164,14 @@ const QuizComponent = () => {
   };
 
   return (
-    <main className="w-full bg-gradient-to-br from-slate-100 to-slate-200 md:p-10 flex justify-center py-2">
-      <div className="w-full max-w-3xl bg-white rounded-3xl shadow-xl overflow-hidden">
+    <main className="w-full md:p-10 flex flex-col justify-center py-2">
+      <button
+        onClick={() => window.location.href = "/"}
+        className="w-20 px-5 py-2.5 mb-4 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 active:scale-95 transition-all duration-200 shadow-sm">
+        Home
+      </button>
+
+      <div className="w-full max-w-3xl bg-white overflow-hidden">
         <div className="p-6 md:p-8">
           <h1 className="text-3xl font-extrabold tracking-tight text-slate-800">
             QUIZEE
@@ -297,7 +303,7 @@ const QuizComponent = () => {
                 </>
               ) : (
                 <div className="text-center py-10">
-                  <p className="text-2xl text-green-600 font-bold mb-2">Perfect Score! 🎉</p>
+                  <p className="text-2xl text-green-600 font-bold mb-2">Perfect Score!</p>
                   <p className="text-slate-500">You answered all questions correctly.</p>
                 </div>
               )}

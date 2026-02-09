@@ -310,13 +310,11 @@ export default function Home() {
   };
 
   return (
-    <main className="p-8">
-      <h2 className="font-extrabold text-5xl p-6 text-center">How do you want to study?</h2>
-      <p className="text-2xl py-4 mx-9 text-center">
-        <span className="active:bg-purple-400 rounded px-1">
-          Master whatever you are learning with Quizee interactive flashcards,
-          practice tests and study activities.
-        </span>
+    <main className="py-8">
+      <h2 className="font-extrabold text-3xl md:text-5xl py-6 text-center">How do you want to study?</h2>
+      <p className="active:bg-purple-400 rounded text-lg md:text-xl py-4 mx-4 text-center">
+        Master whatever you are learning with Quizee interactive flashcards,
+        practice tests and study activities.
       </p>
       <div className="p-6 md:p-8 space-y-4 text-center">
         <h2 className="text-2xl md:text-3xl font-bold">
@@ -393,7 +391,7 @@ export default function Home() {
           ))}
         </div>
 
-        <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-between mt-8 gap-4 sm:gap-0 w-full max-w-md mx-auto">
+        <div className="flex items-center justify-center sm:justify-between mt-8 gap-4 sm:gap-0 w-full max-w-md mx-auto">
           <button
             onClick={() => setCurrPage((prev) => (prev > 1 ? prev - 1 : prev))}
             className="p-2 bg-white rounded-full shadow hover:bg-gray-100 transition"
