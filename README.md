@@ -4,22 +4,22 @@
   <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&auto=format&fit=crop&q=60" alt="Quizee Banner" width="100%" height="300" style="object-fit: cover; border-radius: 10px;">
   <br/>
   <h2>Master Your Studies with Quizee</h2>
-  <p>An interactive flashcard and study application inspired by Quizlet.</p>
+  <p>An interactive learning platform featuring flashcards, quizzes, and educational blogs.</p>
 </div>
 
 ---
 
 ## 📖 About The Project
 
-**Quizee** is a modern web application designed to help students and life-long learners master any subject through interactive flashcards. Built with performance and user experience in mind, it allows users to browse through study sets, visualize concepts, and track their learning progress.
+**Quizee** is a comprehensive modern web application designed to help learners master various subjects. Beyond just flashcards, it offers a robust platform for reading educational content and testing knowledge through interactive quizzes. Built with performance and user experience in mind, it provides a seamless learning journey.
 
 ### ✨ Key Features
 
--   **Interactive Flashcards**: Browse through beautifully designed flashcards with terms and definitions.
--   **Study Sets**: Extensive collection of learning materials covering various topics like Languages, Science, History, and more.
--   **Responsive Design**: A seamless experience across desktop, tablet, and mobile devices.
--   **Dynamic Carousel**: Intuitive navigation for exploring featured topics and images.
--   **Pagination**: Efficiently browse through large collections of learning materials.
+-   **Interactive Flashcards**: Visual learning with beautifully designed flashcards.
+-   **Knowledge Blogs**: Read in-depth articles on various topics, featuring **syntax highlighting** for code snippets, author profiles, and engagement metrics.
+-   **Quiz Mode**: Test your knowledge with interactive quizzes (`/quiz`).
+-   **Responsive Design**: A fully responsive experience optimized for desktop, tablet, and mobile devices.
+-   **Modern UI/UX**: clean interface with smooth transitions and intuitive navigation.
 
 ## 🛠️ Technology Stack
 
@@ -28,11 +28,11 @@
 -   **Styling**: [Tailwind CSS](https://tailwindcss.com/) (v4)
 -   **Routing**: [React Router](https://reactrouter.com/) (v7)
 -   **Icons**: [FontAwesome](https://fontawesome.com/)
--   **Utilities**: `qrcode.react` for QR code generation
+-   **Utils**: `react-syntax-highlighter` for code display, `qrcode.react`
 
 ## 🚀 Getting Started
 
-Follow these steps to set up the project locally on your machine.
+Follow these steps to set up the project locally.
 
 ### Prerequisites
 
@@ -62,42 +62,43 @@ Follow these steps to set up the project locally on your machine.
     ```
 
 4.  **Open your browser**
-    Navigate to `http://localhost:5173` to see the application in action.
+    Navigate to `http://localhost:5173`.
 
 ## 📂 Project Structure
 
 ```
 quizee/
-├── public/              # Static assets
+├── public/                 # Static assets
 ├── src/
-│   ├── assets/          # Project images and icons
-│   ├── Components/      # Reusable UI components
-│   │   ├── Footer.jsx   # Application footer
-│   │   ├── Header.jsx   # Navigation bar and header
-│   │   ├── Home.jsx     # Landing page with flashcards & carousel
-│   │   ├── Quiz.jsx     # Quiz topic selection
-│   │   └── QuizComponent.jsx # Static quiz logic
-│   ├── App.jsx          # Main application component & routing
-│   ├── App.css          # Global styles
-│   ├── index.css        # Tailwind directives and base styles
-│   └── main.jsx         # Application entry point
-├── .gitignore           # Git ignore rules
-├── index.html           # HTML entry point
-├── package.json         # Project dependencies and scripts
-├── vite.config.js       # Vite configuration
-└── README.md            # Project documentation
+│   ├── assets/             # Images, icons, and data (blogs.json)
+│   ├── Components/         # React Components
+│   │   ├── Blog.jsx        # Individual blog post view with code highlighting
+│   │   ├── Blogs.jsx       # List of all available blogs
+│   │   ├── Footer.jsx      # Application footer
+│   │   ├── Header.jsx      # Navigation bar
+│   │   ├── Home.jsx        # Landing page
+│   │   ├── Quiz.jsx        # Quiz entry/selection
+│   │   └── QuizComponent.jsx # Core quiz logic and interface
+│   ├── App.jsx             # Main routing configuration
+│   ├── App.css             # Component-specific styles
+│   ├── index.css           # Tailwind imports and global styles
+│   └── main.jsx            # Entry point
+├── .gitignore
+├── index.html
+├── package.json
+└── vite.config.js
 ```
 
 ## 🔮 Future Improvements
 
--   [ ] **Interactive Quiz Mode**: Fully implement the quiz logic in `Quiz.jsx` to allow users to test their knowledge.
--   [ ] **Create Study Sets**: Allow users to create and save their own custom flashcard sets.
--   [ ] **User Authentication**: Sign up/Login to save progress and sets.
--   [ ] **Dark Mode**: Add a toggle for dark/light theme.
+-   [ ] **User Authentication**: Save progress, bookmarks, and quiz scores.
+-   [ ] **Create Study Sets**: User-generated flashcards.
+-   [ ] **Dark Mode**: System-wide dark theme support.
+-   [ ] **Backend Integration**: Move from JSON data to a Database/CMS.
 
 ## 🤝 Contributing
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Contributions are welcome!
 
 1.  Fork the Project
 2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
@@ -107,7 +108,7 @@ Contributions are what make the open source community such an amazing place to l
 
 ## 📄 License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Distributed under the MIT License.
 
 ---
 
